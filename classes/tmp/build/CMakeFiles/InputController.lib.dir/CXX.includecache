@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/swarm/mipt_atp_patterns/classes/tmp/kbhit.cpp
+stdio.h
+-
+sys/select.h
+-
+termios.h
+-
+sys/ioctl.h
+-
+ctime
+-
+

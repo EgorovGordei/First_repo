@@ -1,0 +1,3 @@
+/home/swarm/mipt_atp_patterns/classes/tmp/build/CMakeFiles/rebuild_cache.dir
+/home/swarm/mipt_atp_patterns/classes/tmp/build/CMakeFiles/edit_cache.dir
+/home/swarm/mipt_atp_patterns/classes/tmp/build/CMakeFiles/InputController.lib.dir
