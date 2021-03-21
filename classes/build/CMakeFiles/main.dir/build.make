@@ -330,9 +330,22 @@ CMakeFiles/main.dir/InGameObjects/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/InGameObjects/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/InGameObjects/Player.cpp -o CMakeFiles/main.dir/InGameObjects/Player.cpp.s
 
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/PlayerBuildings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o -c /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.cpp
+
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.cpp > CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.i
+
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.cpp -o CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.s
+
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o: ../InGameObjects/Squad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/InGameObjects/Squad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/InGameObjects/Squad.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/InGameObjects/Squad.cpp.o -c /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.cpp
 
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/main.dir/InGameObjects/Squad.cpp.s: cmake_force
 
 CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o: ../InGameObjects/Warrior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o -c /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.cpp
 
 CMakeFiles/main.dir/InGameObjects/Warrior.cpp.i: cmake_force
@@ -358,7 +371,7 @@ CMakeFiles/main.dir/InGameObjects/Warrior.cpp.s: cmake_force
 
 CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o: ../InGameObjects/WarriorFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o -c /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.cpp
 
 CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.i: cmake_force
@@ -392,6 +405,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o" \
 "CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o" \
 "CMakeFiles/main.dir/InGameObjects/Player.cpp.o" \
+"CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o" \
 "CMakeFiles/main.dir/InGameObjects/Squad.cpp.o" \
 "CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o" \
 "CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o"
@@ -420,13 +434,14 @@ bin/main: CMakeFiles/main.dir/InGameObjects/Building.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/Player.cpp.o
+bin/main: CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/Squad.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o
 bin/main: CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o
 bin/main: CMakeFiles/main.dir/build.make
 bin/main: lib/libInputController.lib.so
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

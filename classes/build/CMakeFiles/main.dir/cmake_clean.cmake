@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o"
   "CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o"
   "CMakeFiles/main.dir/InGameObjects/Player.cpp.o"
+  "CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o"
   "CMakeFiles/main.dir/InGameObjects/Squad.cpp.o"
   "CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o"
   "CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o"

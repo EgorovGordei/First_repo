@@ -71,6 +71,13 @@ CMakeFiles/main.dir/InGameObjects/Player.cpp.o
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/BuildingFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Castle.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObject.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.h
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h

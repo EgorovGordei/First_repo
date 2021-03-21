@@ -384,6 +384,10 @@ Stats.h
 map
 -
 
+/home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.cpp
+PlayerBuildings.h
+/home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.h
+
 /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.h
 Building.h
 /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h

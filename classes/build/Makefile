@@ -379,6 +379,33 @@ InGameObjects/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.s
 .PHONY : InGameObjects/Player.cpp.s
 
+InGameObjects/PlayerBuildings.o: InGameObjects/PlayerBuildings.cpp.o
+
+.PHONY : InGameObjects/PlayerBuildings.o
+
+# target to build an object file
+InGameObjects/PlayerBuildings.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o
+.PHONY : InGameObjects/PlayerBuildings.cpp.o
+
+InGameObjects/PlayerBuildings.i: InGameObjects/PlayerBuildings.cpp.i
+
+.PHONY : InGameObjects/PlayerBuildings.i
+
+# target to preprocess a source file
+InGameObjects/PlayerBuildings.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.i
+.PHONY : InGameObjects/PlayerBuildings.cpp.i
+
+InGameObjects/PlayerBuildings.s: InGameObjects/PlayerBuildings.cpp.s
+
+.PHONY : InGameObjects/PlayerBuildings.s
+
+# target to generate assembly for a file
+InGameObjects/PlayerBuildings.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.s
+.PHONY : InGameObjects/PlayerBuildings.cpp.s
+
 InGameObjects/Squad.o: InGameObjects/Squad.cpp.o
 
 .PHONY : InGameObjects/Squad.o
@@ -821,6 +848,9 @@ help:
 	@echo "... InGameObjects/Player.o"
 	@echo "... InGameObjects/Player.i"
 	@echo "... InGameObjects/Player.s"
+	@echo "... InGameObjects/PlayerBuildings.o"
+	@echo "... InGameObjects/PlayerBuildings.i"
+	@echo "... InGameObjects/PlayerBuildings.s"
 	@echo "... InGameObjects/Squad.o"
 	@echo "... InGameObjects/Squad.i"
 	@echo "... InGameObjects/Squad.s"

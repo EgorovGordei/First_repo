@@ -71,6 +71,13 @@ CMakeFiles/main.dir/InGameObjects/Player.cpp.o: ../InGameObjects/Swordsman.h
 CMakeFiles/main.dir/InGameObjects/Player.cpp.o: ../InGameObjects/Warrior.h
 CMakeFiles/main.dir/InGameObjects/Player.cpp.o: ../InGameObjects/WarriorFactory.h
 
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/Building.h
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/BuildingFactory.h
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/Castle.h
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/GameObject.h
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/PlayerBuildings.cpp
+CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o: ../InGameObjects/PlayerBuildings.h
+
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o: ../InGameObjects/Archer.h
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o: ../InGameObjects/Cavalery.h
 CMakeFiles/main.dir/InGameObjects/Squad.cpp.o: ../InGameObjects/Custom_Unit.h
