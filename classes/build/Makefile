@@ -217,6 +217,33 @@ BattleField/Level.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.s
 .PHONY : BattleField/Level.cpp.s
 
+InGameObjects/Player.o: InGameObjects/Player.cpp.o
+
+.PHONY : InGameObjects/Player.o
+
+# target to build an object file
+InGameObjects/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.o
+.PHONY : InGameObjects/Player.cpp.o
+
+InGameObjects/Player.i: InGameObjects/Player.cpp.i
+
+.PHONY : InGameObjects/Player.i
+
+# target to preprocess a source file
+InGameObjects/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.i
+.PHONY : InGameObjects/Player.cpp.i
+
+InGameObjects/Player.s: InGameObjects/Player.cpp.s
+
+.PHONY : InGameObjects/Player.s
+
+# target to generate assembly for a file
+InGameObjects/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.s
+.PHONY : InGameObjects/Player.cpp.s
+
 Main/Board.o: Main/Board.cpp.o
 
 .PHONY : Main/Board.o
@@ -560,6 +587,9 @@ help:
 	@echo "... BattleField/Level.o"
 	@echo "... BattleField/Level.i"
 	@echo "... BattleField/Level.s"
+	@echo "... InGameObjects/Player.o"
+	@echo "... InGameObjects/Player.i"
+	@echo "... InGameObjects/Player.s"
 	@echo "... Main/Board.o"
 	@echo "... Main/Board.i"
 	@echo "... Main/Board.s"

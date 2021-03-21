@@ -3,7 +3,7 @@
 #include "Board.h"
 #include "Level.h"
 #include "Player.h"
-
+#include "Stats.h"
 
 class Environment
 {

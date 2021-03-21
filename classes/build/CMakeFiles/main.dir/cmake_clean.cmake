@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Additional/Stats.cpp.o"
   "CMakeFiles/main.dir/BattleField/Cell.cpp.o"
   "CMakeFiles/main.dir/BattleField/Level.cpp.o"
+  "CMakeFiles/main.dir/InGameObjects/Player.cpp.o"
   "CMakeFiles/main.dir/Main/Board.cpp.o"
   "CMakeFiles/main.dir/Main/Environment.cpp.o"
   "CMakeFiles/main.dir/Main/Game.cpp.o"

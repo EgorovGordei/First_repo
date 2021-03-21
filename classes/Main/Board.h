@@ -2,6 +2,8 @@
 #include <vector>
 #include "GameObject.h"
 
+class GameObject;
+
 class Board
 {
 private:
@@ -20,4 +22,6 @@ public:
 	int GetWidth();
 	int GetHeight();
 };
+
+//#include "GameObject.h"
 

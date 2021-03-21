@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/swarm/mipt_atp_patterns/classes/Additional/Stats.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/Additional/Stats.cpp.o"
   "/home/swarm/mipt_atp_patterns/classes/BattleField/Cell.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/BattleField/Cell.cpp.o"
   "/home/swarm/mipt_atp_patterns/classes/BattleField/Level.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/BattleField/Level.cpp.o"
+  "/home/swarm/mipt_atp_patterns/classes/InGameObjects/Player.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/InGameObjects/Player.cpp.o"
   "/home/swarm/mipt_atp_patterns/classes/Main/Board.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/Main/Board.cpp.o"
   "/home/swarm/mipt_atp_patterns/classes/Main/Environment.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/Main/Environment.cpp.o"
   "/home/swarm/mipt_atp_patterns/classes/Main/Game.cpp" "/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/main.dir/Main/Game.cpp.o"

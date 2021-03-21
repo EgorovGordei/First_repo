@@ -1,5 +1,7 @@
 #pragma once
+#include <memory>
 #include "Castle.h"
+
 class BuildingFactory {
 public:
 	static std::shared_ptr<Castle> CreateCastle(int health, int x, int y) {

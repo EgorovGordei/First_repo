@@ -1,5 +1,7 @@
 #pragma once
 #include "GameObject.h"
+#include <utility>
+
 class Building: public GameObject {
 protected:
 	int x_ = -1;
