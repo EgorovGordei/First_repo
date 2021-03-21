@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swarm/mipt_atp_patterns/classes/build/CMakeFiles /home/swarm/mipt_atp_patterns/classes/build/CMakeFiles/progress.marks
@@ -111,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named CTest
+
+# Build rule for target.
+CTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CTest
+.PHONY : CTest
+
+# fast build rule for target.
+CTest/fast:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/build
+.PHONY : CTest/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -142,6 +166,7 @@ Additional/Stats.o: Additional/Stats.cpp.o
 
 # target to build an object file
 Additional/Stats.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Additional/Stats.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Additional/Stats.cpp.o
 .PHONY : Additional/Stats.cpp.o
 
@@ -151,6 +176,7 @@ Additional/Stats.i: Additional/Stats.cpp.i
 
 # target to preprocess a source file
 Additional/Stats.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Additional/Stats.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Additional/Stats.cpp.i
 .PHONY : Additional/Stats.cpp.i
 
@@ -160,6 +186,7 @@ Additional/Stats.s: Additional/Stats.cpp.s
 
 # target to generate assembly for a file
 Additional/Stats.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Additional/Stats.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Additional/Stats.cpp.s
 .PHONY : Additional/Stats.cpp.s
 
@@ -169,6 +196,7 @@ BattleField/Cell.o: BattleField/Cell.cpp.o
 
 # target to build an object file
 BattleField/Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Cell.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.o
 .PHONY : BattleField/Cell.cpp.o
 
@@ -178,6 +206,7 @@ BattleField/Cell.i: BattleField/Cell.cpp.i
 
 # target to preprocess a source file
 BattleField/Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Cell.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.i
 .PHONY : BattleField/Cell.cpp.i
 
@@ -187,6 +216,7 @@ BattleField/Cell.s: BattleField/Cell.cpp.s
 
 # target to generate assembly for a file
 BattleField/Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Cell.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.s
 .PHONY : BattleField/Cell.cpp.s
 
@@ -196,6 +226,7 @@ BattleField/Level.o: BattleField/Level.cpp.o
 
 # target to build an object file
 BattleField/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Level.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.o
 .PHONY : BattleField/Level.cpp.o
 
@@ -205,6 +236,7 @@ BattleField/Level.i: BattleField/Level.cpp.i
 
 # target to preprocess a source file
 BattleField/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Level.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.i
 .PHONY : BattleField/Level.cpp.i
 
@@ -214,6 +246,7 @@ BattleField/Level.s: BattleField/Level.cpp.s
 
 # target to generate assembly for a file
 BattleField/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/BattleField/Level.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.s
 .PHONY : BattleField/Level.cpp.s
 
@@ -223,6 +256,7 @@ InGameObjects/Archer.o: InGameObjects/Archer.cpp.o
 
 # target to build an object file
 InGameObjects/Archer.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Archer.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.o
 .PHONY : InGameObjects/Archer.cpp.o
 
@@ -232,6 +266,7 @@ InGameObjects/Archer.i: InGameObjects/Archer.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Archer.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Archer.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.i
 .PHONY : InGameObjects/Archer.cpp.i
 
@@ -241,6 +276,7 @@ InGameObjects/Archer.s: InGameObjects/Archer.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Archer.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Archer.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.s
 .PHONY : InGameObjects/Archer.cpp.s
 
@@ -250,6 +286,7 @@ InGameObjects/Army.o: InGameObjects/Army.cpp.o
 
 # target to build an object file
 InGameObjects/Army.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Army.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.o
 .PHONY : InGameObjects/Army.cpp.o
 
@@ -259,6 +296,7 @@ InGameObjects/Army.i: InGameObjects/Army.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Army.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Army.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.i
 .PHONY : InGameObjects/Army.cpp.i
 
@@ -268,6 +306,7 @@ InGameObjects/Army.s: InGameObjects/Army.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Army.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Army.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.s
 .PHONY : InGameObjects/Army.cpp.s
 
@@ -277,6 +316,7 @@ InGameObjects/Building.o: InGameObjects/Building.cpp.o
 
 # target to build an object file
 InGameObjects/Building.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Building.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.o
 .PHONY : InGameObjects/Building.cpp.o
 
@@ -286,6 +326,7 @@ InGameObjects/Building.i: InGameObjects/Building.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Building.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Building.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.i
 .PHONY : InGameObjects/Building.cpp.i
 
@@ -295,6 +336,7 @@ InGameObjects/Building.s: InGameObjects/Building.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Building.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Building.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.s
 .PHONY : InGameObjects/Building.cpp.s
 
@@ -304,6 +346,7 @@ InGameObjects/Custom_Unit.o: InGameObjects/Custom_Unit.cpp.o
 
 # target to build an object file
 InGameObjects/Custom_Unit.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Custom_Unit.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o
 .PHONY : InGameObjects/Custom_Unit.cpp.o
 
@@ -313,6 +356,7 @@ InGameObjects/Custom_Unit.i: InGameObjects/Custom_Unit.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Custom_Unit.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Custom_Unit.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.i
 .PHONY : InGameObjects/Custom_Unit.cpp.i
 
@@ -322,6 +366,7 @@ InGameObjects/Custom_Unit.s: InGameObjects/Custom_Unit.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Custom_Unit.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Custom_Unit.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.s
 .PHONY : InGameObjects/Custom_Unit.cpp.s
 
@@ -331,6 +376,7 @@ InGameObjects/GameObjectFactory.o: InGameObjects/GameObjectFactory.cpp.o
 
 # target to build an object file
 InGameObjects/GameObjectFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/GameObjectFactory.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o
 .PHONY : InGameObjects/GameObjectFactory.cpp.o
 
@@ -340,6 +386,7 @@ InGameObjects/GameObjectFactory.i: InGameObjects/GameObjectFactory.cpp.i
 
 # target to preprocess a source file
 InGameObjects/GameObjectFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/GameObjectFactory.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.i
 .PHONY : InGameObjects/GameObjectFactory.cpp.i
 
@@ -349,6 +396,7 @@ InGameObjects/GameObjectFactory.s: InGameObjects/GameObjectFactory.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/GameObjectFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/GameObjectFactory.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.s
 .PHONY : InGameObjects/GameObjectFactory.cpp.s
 
@@ -358,6 +406,7 @@ InGameObjects/Player.o: InGameObjects/Player.cpp.o
 
 # target to build an object file
 InGameObjects/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Player.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.o
 .PHONY : InGameObjects/Player.cpp.o
 
@@ -367,6 +416,7 @@ InGameObjects/Player.i: InGameObjects/Player.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Player.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.i
 .PHONY : InGameObjects/Player.cpp.i
 
@@ -376,6 +426,7 @@ InGameObjects/Player.s: InGameObjects/Player.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Player.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.s
 .PHONY : InGameObjects/Player.cpp.s
 
@@ -385,6 +436,7 @@ InGameObjects/PlayerBuildings.o: InGameObjects/PlayerBuildings.cpp.o
 
 # target to build an object file
 InGameObjects/PlayerBuildings.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/PlayerBuildings.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.o
 .PHONY : InGameObjects/PlayerBuildings.cpp.o
 
@@ -394,6 +446,7 @@ InGameObjects/PlayerBuildings.i: InGameObjects/PlayerBuildings.cpp.i
 
 # target to preprocess a source file
 InGameObjects/PlayerBuildings.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/PlayerBuildings.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.i
 .PHONY : InGameObjects/PlayerBuildings.cpp.i
 
@@ -403,6 +456,7 @@ InGameObjects/PlayerBuildings.s: InGameObjects/PlayerBuildings.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/PlayerBuildings.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/PlayerBuildings.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/PlayerBuildings.cpp.s
 .PHONY : InGameObjects/PlayerBuildings.cpp.s
 
@@ -412,6 +466,7 @@ InGameObjects/Squad.o: InGameObjects/Squad.cpp.o
 
 # target to build an object file
 InGameObjects/Squad.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Squad.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.o
 .PHONY : InGameObjects/Squad.cpp.o
 
@@ -421,6 +476,7 @@ InGameObjects/Squad.i: InGameObjects/Squad.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Squad.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Squad.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.i
 .PHONY : InGameObjects/Squad.cpp.i
 
@@ -430,6 +486,7 @@ InGameObjects/Squad.s: InGameObjects/Squad.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Squad.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Squad.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.s
 .PHONY : InGameObjects/Squad.cpp.s
 
@@ -439,6 +496,7 @@ InGameObjects/Warrior.o: InGameObjects/Warrior.cpp.o
 
 # target to build an object file
 InGameObjects/Warrior.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Warrior.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o
 .PHONY : InGameObjects/Warrior.cpp.o
 
@@ -448,6 +506,7 @@ InGameObjects/Warrior.i: InGameObjects/Warrior.cpp.i
 
 # target to preprocess a source file
 InGameObjects/Warrior.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Warrior.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.i
 .PHONY : InGameObjects/Warrior.cpp.i
 
@@ -457,6 +516,7 @@ InGameObjects/Warrior.s: InGameObjects/Warrior.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/Warrior.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/Warrior.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.s
 .PHONY : InGameObjects/Warrior.cpp.s
 
@@ -466,6 +526,7 @@ InGameObjects/WarriorFactory.o: InGameObjects/WarriorFactory.cpp.o
 
 # target to build an object file
 InGameObjects/WarriorFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/WarriorFactory.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o
 .PHONY : InGameObjects/WarriorFactory.cpp.o
 
@@ -475,6 +536,7 @@ InGameObjects/WarriorFactory.i: InGameObjects/WarriorFactory.cpp.i
 
 # target to preprocess a source file
 InGameObjects/WarriorFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/WarriorFactory.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.i
 .PHONY : InGameObjects/WarriorFactory.cpp.i
 
@@ -484,6 +546,7 @@ InGameObjects/WarriorFactory.s: InGameObjects/WarriorFactory.cpp.s
 
 # target to generate assembly for a file
 InGameObjects/WarriorFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/InGameObjects/WarriorFactory.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.s
 .PHONY : InGameObjects/WarriorFactory.cpp.s
 
@@ -493,6 +556,7 @@ Main/Board.o: Main/Board.cpp.o
 
 # target to build an object file
 Main/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Board.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.o
 .PHONY : Main/Board.cpp.o
 
@@ -502,6 +566,7 @@ Main/Board.i: Main/Board.cpp.i
 
 # target to preprocess a source file
 Main/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Board.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.i
 .PHONY : Main/Board.cpp.i
 
@@ -511,6 +576,7 @@ Main/Board.s: Main/Board.cpp.s
 
 # target to generate assembly for a file
 Main/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Board.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.s
 .PHONY : Main/Board.cpp.s
 
@@ -520,6 +586,7 @@ Main/Environment.o: Main/Environment.cpp.o
 
 # target to build an object file
 Main/Environment.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Environment.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.o
 .PHONY : Main/Environment.cpp.o
 
@@ -529,6 +596,7 @@ Main/Environment.i: Main/Environment.cpp.i
 
 # target to preprocess a source file
 Main/Environment.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Environment.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.i
 .PHONY : Main/Environment.cpp.i
 
@@ -538,6 +606,7 @@ Main/Environment.s: Main/Environment.cpp.s
 
 # target to generate assembly for a file
 Main/Environment.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Environment.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.s
 .PHONY : Main/Environment.cpp.s
 
@@ -547,6 +616,7 @@ Main/Game.o: Main/Game.cpp.o
 
 # target to build an object file
 Main/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Game.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.o
 .PHONY : Main/Game.cpp.o
 
@@ -556,6 +626,7 @@ Main/Game.i: Main/Game.cpp.i
 
 # target to preprocess a source file
 Main/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Game.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.i
 .PHONY : Main/Game.cpp.i
 
@@ -565,6 +636,7 @@ Main/Game.s: Main/Game.cpp.s
 
 # target to generate assembly for a file
 Main/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Game.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.s
 .PHONY : Main/Game.cpp.s
 
@@ -574,6 +646,7 @@ Main/Menu.o: Main/Menu.cpp.o
 
 # target to build an object file
 Main/Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Menu.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Menu.cpp.o
 .PHONY : Main/Menu.cpp.o
 
@@ -583,6 +656,7 @@ Main/Menu.i: Main/Menu.cpp.i
 
 # target to preprocess a source file
 Main/Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Menu.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Menu.cpp.i
 .PHONY : Main/Menu.cpp.i
 
@@ -592,6 +666,7 @@ Main/Menu.s: Main/Menu.cpp.s
 
 # target to generate assembly for a file
 Main/Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Menu.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Menu.cpp.s
 .PHONY : Main/Menu.cpp.s
 
@@ -601,6 +676,7 @@ Main/Shop.o: Main/Shop.cpp.o
 
 # target to build an object file
 Main/Shop.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Shop.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.o
 .PHONY : Main/Shop.cpp.o
 
@@ -610,6 +686,7 @@ Main/Shop.i: Main/Shop.cpp.i
 
 # target to preprocess a source file
 Main/Shop.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Shop.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.i
 .PHONY : Main/Shop.cpp.i
 
@@ -619,6 +696,7 @@ Main/Shop.s: Main/Shop.cpp.s
 
 # target to generate assembly for a file
 Main/Shop.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Main/Shop.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.s
 .PHONY : Main/Shop.cpp.s
 
@@ -628,6 +706,7 @@ Painter/Painter.o: Painter/Painter.cpp.o
 
 # target to build an object file
 Painter/Painter.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/Painter.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/Painter.cpp.o
 .PHONY : Painter/Painter.cpp.o
 
@@ -637,6 +716,7 @@ Painter/Painter.i: Painter/Painter.cpp.i
 
 # target to preprocess a source file
 Painter/Painter.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/Painter.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/Painter.cpp.i
 .PHONY : Painter/Painter.cpp.i
 
@@ -646,6 +726,7 @@ Painter/Painter.s: Painter/Painter.cpp.s
 
 # target to generate assembly for a file
 Painter/Painter.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/Painter.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/Painter.cpp.s
 .PHONY : Painter/Painter.cpp.s
 
@@ -655,6 +736,7 @@ Painter/PainterConsole.o: Painter/PainterConsole.cpp.o
 
 # target to build an object file
 Painter/PainterConsole.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterConsole.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterConsole.cpp.o
 .PHONY : Painter/PainterConsole.cpp.o
 
@@ -664,6 +746,7 @@ Painter/PainterConsole.i: Painter/PainterConsole.cpp.i
 
 # target to preprocess a source file
 Painter/PainterConsole.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterConsole.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterConsole.cpp.i
 .PHONY : Painter/PainterConsole.cpp.i
 
@@ -673,6 +756,7 @@ Painter/PainterConsole.s: Painter/PainterConsole.cpp.s
 
 # target to generate assembly for a file
 Painter/PainterConsole.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterConsole.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterConsole.cpp.s
 .PHONY : Painter/PainterConsole.cpp.s
 
@@ -682,6 +766,7 @@ Painter/PainterFactory.o: Painter/PainterFactory.cpp.o
 
 # target to build an object file
 Painter/PainterFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterFactory.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
 .PHONY : Painter/PainterFactory.cpp.o
 
@@ -691,6 +776,7 @@ Painter/PainterFactory.i: Painter/PainterFactory.cpp.i
 
 # target to preprocess a source file
 Painter/PainterFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterFactory.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterFactory.cpp.i
 .PHONY : Painter/PainterFactory.cpp.i
 
@@ -700,6 +786,7 @@ Painter/PainterFactory.s: Painter/PainterFactory.cpp.s
 
 # target to generate assembly for a file
 Painter/PainterFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterFactory.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterFactory.cpp.s
 .PHONY : Painter/PainterFactory.cpp.s
 
@@ -709,6 +796,7 @@ Painter/PainterGame.o: Painter/PainterGame.cpp.o
 
 # target to build an object file
 Painter/PainterGame.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterGame.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.o
 .PHONY : Painter/PainterGame.cpp.o
 
@@ -718,6 +806,7 @@ Painter/PainterGame.i: Painter/PainterGame.cpp.i
 
 # target to preprocess a source file
 Painter/PainterGame.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterGame.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.i
 .PHONY : Painter/PainterGame.cpp.i
 
@@ -727,6 +816,7 @@ Painter/PainterGame.s: Painter/PainterGame.cpp.s
 
 # target to generate assembly for a file
 Painter/PainterGame.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterGame.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.s
 .PHONY : Painter/PainterGame.cpp.s
 
@@ -736,6 +826,7 @@ Painter/PainterMenu.o: Painter/PainterMenu.cpp.o
 
 # target to build an object file
 Painter/PainterMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterMenu.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
 .PHONY : Painter/PainterMenu.cpp.o
 
@@ -745,6 +836,7 @@ Painter/PainterMenu.i: Painter/PainterMenu.cpp.i
 
 # target to preprocess a source file
 Painter/PainterMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterMenu.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterMenu.cpp.i
 .PHONY : Painter/PainterMenu.cpp.i
 
@@ -754,6 +846,7 @@ Painter/PainterMenu.s: Painter/PainterMenu.cpp.s
 
 # target to generate assembly for a file
 Painter/PainterMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterMenu.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterMenu.cpp.s
 .PHONY : Painter/PainterMenu.cpp.s
 
@@ -763,6 +856,7 @@ Painter/PainterShop.o: Painter/PainterShop.cpp.o
 
 # target to build an object file
 Painter/PainterShop.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterShop.cpp.o
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.o
 .PHONY : Painter/PainterShop.cpp.o
 
@@ -772,6 +866,7 @@ Painter/PainterShop.i: Painter/PainterShop.cpp.i
 
 # target to preprocess a source file
 Painter/PainterShop.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterShop.cpp.i
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.i
 .PHONY : Painter/PainterShop.cpp.i
 
@@ -781,6 +876,7 @@ Painter/PainterShop.s: Painter/PainterShop.cpp.s
 
 # target to generate assembly for a file
 Painter/PainterShop.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/Painter/PainterShop.cpp.s
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.s
 .PHONY : Painter/PainterShop.cpp.s
 
@@ -811,6 +907,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+main_test.o: main_test.cpp.o
+
+.PHONY : main_test.o
+
+# target to build an object file
+main_test.cpp.o:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/main_test.cpp.o
+.PHONY : main_test.cpp.o
+
+main_test.i: main_test.cpp.i
+
+.PHONY : main_test.i
+
+# target to preprocess a source file
+main_test.cpp.i:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/main_test.cpp.i
+.PHONY : main_test.cpp.i
+
+main_test.s: main_test.cpp.s
+
+.PHONY : main_test.s
+
+# target to generate assembly for a file
+main_test.cpp.s:
+	$(MAKE) -f CMakeFiles/CTest.dir/build.make CMakeFiles/CTest.dir/main_test.cpp.s
+.PHONY : main_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -819,6 +942,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... CTest"
 	@echo "... main"
 	@echo "... InputController.lib"
 	@echo "... Additional/Stats.o"
@@ -896,6 +1021,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_test.o"
+	@echo "... main_test.i"
+	@echo "... main_test.s"
 .PHONY : help
 
 

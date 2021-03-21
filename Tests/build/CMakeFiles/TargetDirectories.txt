@@ -1,0 +1,4 @@
+/home/swarm/mipt_atp_patterns/Tests/build/CMakeFiles/rebuild_cache.dir
+/home/swarm/mipt_atp_patterns/Tests/build/CMakeFiles/edit_cache.dir
+/home/swarm/mipt_atp_patterns/Tests/build/CMakeFiles/test.dir
+/home/swarm/mipt_atp_patterns/Tests/build/CMakeFiles/CTest.dir

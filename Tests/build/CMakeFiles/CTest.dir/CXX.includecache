@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/swarm/mipt_atp_patterns/Tests/Test_Game.h
+InGameObjects/WarriorFactory.h
+/home/swarm/mipt_atp_patterns/Tests/InGameObjects/WarriorFactory.h
+InGameObjects/GameObjectFactory.h
+/home/swarm/mipt_atp_patterns/Tests/InGameObjects/GameObjectFactory.h
+InGameObjects/Army.h
+/home/swarm/mipt_atp_patterns/Tests/InGameObjects/Army.h
+memory
+-
+
+/home/swarm/mipt_atp_patterns/Tests/main_test.cpp
+testing.cpp
+/home/swarm/mipt_atp_patterns/Tests/testing.cpp
+
+/home/swarm/mipt_atp_patterns/Tests/testing.cpp
+gtest/gtest.h
+-
+Test_Game.h
+/home/swarm/mipt_atp_patterns/Tests/Test_Game.h
+

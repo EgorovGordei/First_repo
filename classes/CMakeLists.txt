@@ -13,11 +13,23 @@ project(main)
 # create executable
 set(CDIR ${CMAKE_SOURCE_DIR})
 include_directories(${CDIR} "${CDIR}/Input/" "${CDIR}/Main/" "${CDIR}/Painter/" "${CDIR}/Additional/" "${CDIR}/BattleField" "${CDIR}/InGameObjects/")
-add_executable(main main.cpp Main/Menu.cpp Main/Menu.h Main/Shop.h Main/Shop.cpp Main/Game.h Main/Game.cpp Main/Environment.cpp Main/Environment.h Main/Board.cpp Main/Board.h Painter/PainterMenu.cpp Painter/PainterMenu.h Painter/PainterShop.cpp Painter/PainterGame.cpp Painter/PainterGame.h Painter/Painter.h Painter/PainterFactory.cpp Painter/PainterFactory.h Painter/Painter.h Painter/Painter.cpp Painter/PainterConsole.h Painter/PainterConsole.cpp Additional/Stats.cpp Additional/Stats.h BattleField/Level.cpp BattleField/Level.cpp BattleField/Cell.h BattleField/Cell.cpp InGameObjects/Archer.h InGameObjects/Archer.cpp InGameObjects/Army.h InGameObjects/Army.cpp InGameObjects/Building.h InGameObjects/Building.cpp InGameObjects/BuildingFactory.h InGameObjects/Castle.h InGameObjects/Cavalery.h InGameObjects/Custom_Unit.h InGameObjects/Custom_Unit.cpp InGameObjects/GameObject.h InGameObjects/GameObjectFactory.h InGameObjects/GameObjectFactory.cpp InGameObjects/Player.h InGameObjects/Player.cpp InGameObjects/PlayerBuildings.h InGameObjects/PlayerBuildings.cpp InGameObjects/Squad.h InGameObjects/Squad.cpp InGameObjects/Swordsman.h InGameObjects/UserBuildings.h InGameObjects/Warrior.h InGameObjects/Warrior.cpp InGameObjects/WarriorFactory.h InGameObjects/WarriorFactory.cpp)
+set(to_exec Main/Menu.cpp Main/Menu.h Main/Shop.h Main/Shop.cpp Main/Game.h Main/Game.cpp Main/Environment.cpp Main/Environment.h Main/Board.cpp Main/Board.h Painter/PainterMenu.cpp Painter/PainterMenu.h Painter/PainterShop.cpp Painter/PainterGame.cpp Painter/PainterGame.h Painter/Painter.h Painter/PainterFactory.cpp Painter/PainterFactory.h Painter/Painter.h Painter/Painter.cpp Painter/PainterConsole.h Painter/PainterConsole.cpp Additional/Stats.cpp Additional/Stats.h BattleField/Level.cpp BattleField/Level.cpp BattleField/Cell.h BattleField/Cell.cpp InGameObjects/Archer.h InGameObjects/Archer.cpp InGameObjects/Army.h InGameObjects/Army.cpp InGameObjects/Building.h InGameObjects/Building.cpp InGameObjects/BuildingFactory.h InGameObjects/Castle.h InGameObjects/Cavalery.h InGameObjects/Custom_Unit.h InGameObjects/Custom_Unit.cpp InGameObjects/GameObject.h InGameObjects/GameObjectFactory.h InGameObjects/GameObjectFactory.cpp InGameObjects/Player.h InGameObjects/Player.cpp InGameObjects/PlayerBuildings.h InGameObjects/PlayerBuildings.cpp InGameObjects/Squad.h InGameObjects/Squad.cpp InGameObjects/Swordsman.h InGameObjects/UserBuildings.h InGameObjects/Warrior.h InGameObjects/Warrior.cpp InGameObjects/WarriorFactory.h InGameObjects/WarriorFactory.cpp)
+
+add_executable(main main.cpp ${to_exec})
+add_executable(CTest "${CMAKE_SOURCE_DIR}/main_test.cpp" ${to_exec})
+
 
 # step 2
 # compile InputController.lib
 add_subdirectory(./Input/)
 target_link_libraries(main InputController.lib)
 
+
+enable_testing() 
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+target_link_libraries(CTest GTest::GTest GTest::Main)
+target_link_libraries(CTest InputController.lib)
+add_test(Tests CTest)
 
