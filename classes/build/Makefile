@@ -163,6 +163,141 @@ Additional/Stats.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Additional/Stats.cpp.s
 .PHONY : Additional/Stats.cpp.s
 
+BattleField/Cell.o: BattleField/Cell.cpp.o
+
+.PHONY : BattleField/Cell.o
+
+# target to build an object file
+BattleField/Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.o
+.PHONY : BattleField/Cell.cpp.o
+
+BattleField/Cell.i: BattleField/Cell.cpp.i
+
+.PHONY : BattleField/Cell.i
+
+# target to preprocess a source file
+BattleField/Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.i
+.PHONY : BattleField/Cell.cpp.i
+
+BattleField/Cell.s: BattleField/Cell.cpp.s
+
+.PHONY : BattleField/Cell.s
+
+# target to generate assembly for a file
+BattleField/Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Cell.cpp.s
+.PHONY : BattleField/Cell.cpp.s
+
+BattleField/Level.o: BattleField/Level.cpp.o
+
+.PHONY : BattleField/Level.o
+
+# target to build an object file
+BattleField/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.o
+.PHONY : BattleField/Level.cpp.o
+
+BattleField/Level.i: BattleField/Level.cpp.i
+
+.PHONY : BattleField/Level.i
+
+# target to preprocess a source file
+BattleField/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.i
+.PHONY : BattleField/Level.cpp.i
+
+BattleField/Level.s: BattleField/Level.cpp.s
+
+.PHONY : BattleField/Level.s
+
+# target to generate assembly for a file
+BattleField/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.s
+.PHONY : BattleField/Level.cpp.s
+
+Main/Board.o: Main/Board.cpp.o
+
+.PHONY : Main/Board.o
+
+# target to build an object file
+Main/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.o
+.PHONY : Main/Board.cpp.o
+
+Main/Board.i: Main/Board.cpp.i
+
+.PHONY : Main/Board.i
+
+# target to preprocess a source file
+Main/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.i
+.PHONY : Main/Board.cpp.i
+
+Main/Board.s: Main/Board.cpp.s
+
+.PHONY : Main/Board.s
+
+# target to generate assembly for a file
+Main/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Board.cpp.s
+.PHONY : Main/Board.cpp.s
+
+Main/Environment.o: Main/Environment.cpp.o
+
+.PHONY : Main/Environment.o
+
+# target to build an object file
+Main/Environment.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.o
+.PHONY : Main/Environment.cpp.o
+
+Main/Environment.i: Main/Environment.cpp.i
+
+.PHONY : Main/Environment.i
+
+# target to preprocess a source file
+Main/Environment.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.i
+.PHONY : Main/Environment.cpp.i
+
+Main/Environment.s: Main/Environment.cpp.s
+
+.PHONY : Main/Environment.s
+
+# target to generate assembly for a file
+Main/Environment.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Environment.cpp.s
+.PHONY : Main/Environment.cpp.s
+
+Main/Game.o: Main/Game.cpp.o
+
+.PHONY : Main/Game.o
+
+# target to build an object file
+Main/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.o
+.PHONY : Main/Game.cpp.o
+
+Main/Game.i: Main/Game.cpp.i
+
+.PHONY : Main/Game.i
+
+# target to preprocess a source file
+Main/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.i
+.PHONY : Main/Game.cpp.i
+
+Main/Game.s: Main/Game.cpp.s
+
+.PHONY : Main/Game.s
+
+# target to generate assembly for a file
+Main/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Game.cpp.s
+.PHONY : Main/Game.cpp.s
+
 Main/Menu.o: Main/Menu.cpp.o
 
 .PHONY : Main/Menu.o
@@ -298,6 +433,33 @@ Painter/PainterFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterFactory.cpp.s
 .PHONY : Painter/PainterFactory.cpp.s
 
+Painter/PainterGame.o: Painter/PainterGame.cpp.o
+
+.PHONY : Painter/PainterGame.o
+
+# target to build an object file
+Painter/PainterGame.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.o
+.PHONY : Painter/PainterGame.cpp.o
+
+Painter/PainterGame.i: Painter/PainterGame.cpp.i
+
+.PHONY : Painter/PainterGame.i
+
+# target to preprocess a source file
+Painter/PainterGame.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.i
+.PHONY : Painter/PainterGame.cpp.i
+
+Painter/PainterGame.s: Painter/PainterGame.cpp.s
+
+.PHONY : Painter/PainterGame.s
+
+# target to generate assembly for a file
+Painter/PainterGame.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterGame.cpp.s
+.PHONY : Painter/PainterGame.cpp.s
+
 Painter/PainterMenu.o: Painter/PainterMenu.cpp.o
 
 .PHONY : Painter/PainterMenu.o
@@ -392,6 +554,21 @@ help:
 	@echo "... Additional/Stats.o"
 	@echo "... Additional/Stats.i"
 	@echo "... Additional/Stats.s"
+	@echo "... BattleField/Cell.o"
+	@echo "... BattleField/Cell.i"
+	@echo "... BattleField/Cell.s"
+	@echo "... BattleField/Level.o"
+	@echo "... BattleField/Level.i"
+	@echo "... BattleField/Level.s"
+	@echo "... Main/Board.o"
+	@echo "... Main/Board.i"
+	@echo "... Main/Board.s"
+	@echo "... Main/Environment.o"
+	@echo "... Main/Environment.i"
+	@echo "... Main/Environment.s"
+	@echo "... Main/Game.o"
+	@echo "... Main/Game.i"
+	@echo "... Main/Game.s"
 	@echo "... Main/Menu.o"
 	@echo "... Main/Menu.i"
 	@echo "... Main/Menu.s"
@@ -407,6 +584,9 @@ help:
 	@echo "... Painter/PainterFactory.o"
 	@echo "... Painter/PainterFactory.i"
 	@echo "... Painter/PainterFactory.s"
+	@echo "... Painter/PainterGame.o"
+	@echo "... Painter/PainterGame.i"
+	@echo "... Painter/PainterGame.s"
 	@echo "... Painter/PainterMenu.o"
 	@echo "... Painter/PainterMenu.i"
 	@echo "... Painter/PainterMenu.s"

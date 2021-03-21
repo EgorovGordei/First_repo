@@ -4,8 +4,45 @@
 CMakeFiles/main.dir/Additional/Stats.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Additional/Stats.cpp
  /home/swarm/mipt_atp_patterns/classes/Additional/Stats.h
+CMakeFiles/main.dir/BattleField/Cell.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/BattleField/Cell.cpp
+ /home/swarm/mipt_atp_patterns/classes/BattleField/Cell.h
+CMakeFiles/main.dir/BattleField/Level.cpp.o
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
+ /home/swarm/mipt_atp_patterns/classes/BattleField/Level.cpp
+CMakeFiles/main.dir/Main/Board.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/Main/Board.cpp
+ /home/swarm/mipt_atp_patterns/classes/Main/Board.h
+CMakeFiles/main.dir/Main/Environment.cpp.o
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Board.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Environment.cpp
+ /home/swarm/mipt_atp_patterns/classes/Main/Environment.h
+CMakeFiles/main.dir/Main/Game.cpp.o
+ ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
+ ../Input/InputController.h
+ ../Input/InputFactory.h
+ ../Input/InputKeyboard.h
+ ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Menu.h
+ ../Main/Shop.h
+ ../Painter/Painter.h
+ ../Painter/PainterConsole.h
+ ../Painter/PainterFactory.h
+ ../Painter/PainterGame.h
+ ../Painter/PainterMenu.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Environment.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Game.cpp
+ /home/swarm/mipt_atp_patterns/classes/Main/Game.h
 CMakeFiles/main.dir/Main/Menu.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -14,15 +51,23 @@ CMakeFiles/main.dir/Main/Menu.cpp.o
  ../Painter/PainterConsole.h
  ../Painter/PainterFactory.h
  ../Painter/PainterMenu.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Board.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Environment.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Game.h
  /home/swarm/mipt_atp_patterns/classes/Main/Menu.cpp
  /home/swarm/mipt_atp_patterns/classes/Main/Menu.h
  /home/swarm/mipt_atp_patterns/classes/Main/Shop.h
 CMakeFiles/main.dir/Main/Shop.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
  ../Main/Menu.h
  ../Painter/Painter.h
  ../Painter/PainterConsole.h
@@ -40,10 +85,15 @@ CMakeFiles/main.dir/Painter/PainterConsole.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.h
 CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
  ../Main/Menu.h
  ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
@@ -51,12 +101,36 @@ CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.cpp
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.h
-CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
+CMakeFiles/main.dir/Painter/PainterGame.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
+ ../Main/Menu.h
+ ../Main/Shop.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterGame.cpp
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterGame.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.h
+CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
+ ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
+ ../Input/InputController.h
+ ../Input/InputFactory.h
+ ../Input/InputKeyboard.h
+ ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
  ../Main/Menu.h
  ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
@@ -66,10 +140,15 @@ CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.h
 CMakeFiles/main.dir/Painter/PainterShop.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
  ../Main/Menu.h
  ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
@@ -80,10 +159,15 @@ CMakeFiles/main.dir/Painter/PainterShop.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.h
 CMakeFiles/main.dir/main.cpp.o
  ../Additional/Stats.h
+ ../BattleField/Cell.h
+ ../BattleField/Level.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
+ ../Main/Board.h
+ ../Main/Environment.h
+ ../Main/Game.h
  ../Main/Menu.h
  ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/main.cpp

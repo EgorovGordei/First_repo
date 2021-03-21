@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DInputController_lib_EXPORTS
 
-CXX_INCLUDES = -I/home/swarm/mipt_atp_patterns/classes -I/home/swarm/mipt_atp_patterns/classes/Input -I/home/swarm/mipt_atp_patterns/classes/Main -I/home/swarm/mipt_atp_patterns/classes/Painter -I/home/swarm/mipt_atp_patterns/classes/Additional 
+CXX_INCLUDES = -I/home/swarm/mipt_atp_patterns/classes -I/home/swarm/mipt_atp_patterns/classes/Input -I/home/swarm/mipt_atp_patterns/classes/Main -I/home/swarm/mipt_atp_patterns/classes/Painter -I/home/swarm/mipt_atp_patterns/classes/Additional -I/home/swarm/mipt_atp_patterns/classes/BattleField 
 

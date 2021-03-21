@@ -3,7 +3,7 @@
 #include "InputFactory.h"
 #include "PainterMenu.h"
 
-Menu::Menu() : IC(InputFactory::GetInputController()), shop(this) 
+Menu::Menu() : IC(InputFactory::GetInputController()), shop(this), game(this) 
 {
 	bool b = stats.LoadLastPlayer();
 	// no need to create new player

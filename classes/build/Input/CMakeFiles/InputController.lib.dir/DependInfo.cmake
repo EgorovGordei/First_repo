@@ -23,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Main"
   "../Painter"
   "../Additional"
+  "../BattleField"
   )
 
 # Targets to which this target links.

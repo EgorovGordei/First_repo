@@ -79,22 +79,10 @@ bool PainterMenu::ProcessKey(char key)
 	}
 	if (step_ == 2)
 	{
-		if (key == 'q')
-		{
-			step_ = 1;
-			i_ = 0;
-			ProcessKey(0);
-		}
-		else
-		{
-			painter_->cls();
-			painter_->print("Press Q to return back\n");
-			painter_->set_red();
-			painter_->print("/\\/\\\n\\  /\n \\/ \n");
-			painter_->set_white();
-			painter_->print("I must call Game class, but I haven't made it yet :)");
-			painter_->flush();
-		}
+		menu_->game.MainLoop();
+		step_ = 1;
+		i_ = 0;
+		ProcessKey(0);
 	}
 	if (step_ == 3)
 	{

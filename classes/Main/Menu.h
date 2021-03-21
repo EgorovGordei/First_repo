@@ -4,6 +4,7 @@
 #include "InputFactory.h"
 #include "Stats.h"
 #include "Shop.h"
+#include "Game.h"
 #include <memory>
 
 #include <vector>
@@ -21,6 +22,7 @@ public:
 	std::shared_ptr<InputController> IC;
 	Stats stats;
 	Shop shop;
+	Game game;
 
 	Menu();
 	void MainLoop();
