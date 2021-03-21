@@ -6,17 +6,19 @@
 class Army {
 public:
 	static std::map<std::pair<int, int>, std::shared_ptr<Squad>> squads;
-	void CreateNewSquad(int squad_x, int squad_y, int warrior_type);
+	std::shared_ptr<Squad> CreateNewSquad(int squad_x, int squad_y, int warrior_type);
 	void RemoveExistingSquad(int squad_x, int squad_y);
 };
 
 std::map<std::pair<int, int>, std::shared_ptr<Squad>> Army::squads;
 
-void Army::CreateNewSquad(int squad_x, int squad_y, int warrior_type) {
+std::shared_ptr<Squad> Army::CreateNewSquad(int squad_x, int squad_y, int warrior_type) {
 
 	if (squads.find(std::make_pair(squad_x, squad_y)) == squads.end()){
 		squads[std::make_pair(squad_x, squad_y)] = std::shared_ptr<Squad>(GameObjectFactory::CreateSquad(squad_x, squad_y, warrior_type));
+		return squads[std::make_pair(squad_x, squad_y)];
 	}
+	return nullptr;
 
 }
 
