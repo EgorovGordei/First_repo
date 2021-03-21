@@ -217,6 +217,141 @@ BattleField/Level.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BattleField/Level.cpp.s
 .PHONY : BattleField/Level.cpp.s
 
+InGameObjects/Archer.o: InGameObjects/Archer.cpp.o
+
+.PHONY : InGameObjects/Archer.o
+
+# target to build an object file
+InGameObjects/Archer.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.o
+.PHONY : InGameObjects/Archer.cpp.o
+
+InGameObjects/Archer.i: InGameObjects/Archer.cpp.i
+
+.PHONY : InGameObjects/Archer.i
+
+# target to preprocess a source file
+InGameObjects/Archer.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.i
+.PHONY : InGameObjects/Archer.cpp.i
+
+InGameObjects/Archer.s: InGameObjects/Archer.cpp.s
+
+.PHONY : InGameObjects/Archer.s
+
+# target to generate assembly for a file
+InGameObjects/Archer.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Archer.cpp.s
+.PHONY : InGameObjects/Archer.cpp.s
+
+InGameObjects/Army.o: InGameObjects/Army.cpp.o
+
+.PHONY : InGameObjects/Army.o
+
+# target to build an object file
+InGameObjects/Army.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.o
+.PHONY : InGameObjects/Army.cpp.o
+
+InGameObjects/Army.i: InGameObjects/Army.cpp.i
+
+.PHONY : InGameObjects/Army.i
+
+# target to preprocess a source file
+InGameObjects/Army.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.i
+.PHONY : InGameObjects/Army.cpp.i
+
+InGameObjects/Army.s: InGameObjects/Army.cpp.s
+
+.PHONY : InGameObjects/Army.s
+
+# target to generate assembly for a file
+InGameObjects/Army.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Army.cpp.s
+.PHONY : InGameObjects/Army.cpp.s
+
+InGameObjects/Building.o: InGameObjects/Building.cpp.o
+
+.PHONY : InGameObjects/Building.o
+
+# target to build an object file
+InGameObjects/Building.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.o
+.PHONY : InGameObjects/Building.cpp.o
+
+InGameObjects/Building.i: InGameObjects/Building.cpp.i
+
+.PHONY : InGameObjects/Building.i
+
+# target to preprocess a source file
+InGameObjects/Building.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.i
+.PHONY : InGameObjects/Building.cpp.i
+
+InGameObjects/Building.s: InGameObjects/Building.cpp.s
+
+.PHONY : InGameObjects/Building.s
+
+# target to generate assembly for a file
+InGameObjects/Building.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Building.cpp.s
+.PHONY : InGameObjects/Building.cpp.s
+
+InGameObjects/Custom_Unit.o: InGameObjects/Custom_Unit.cpp.o
+
+.PHONY : InGameObjects/Custom_Unit.o
+
+# target to build an object file
+InGameObjects/Custom_Unit.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o
+.PHONY : InGameObjects/Custom_Unit.cpp.o
+
+InGameObjects/Custom_Unit.i: InGameObjects/Custom_Unit.cpp.i
+
+.PHONY : InGameObjects/Custom_Unit.i
+
+# target to preprocess a source file
+InGameObjects/Custom_Unit.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.i
+.PHONY : InGameObjects/Custom_Unit.cpp.i
+
+InGameObjects/Custom_Unit.s: InGameObjects/Custom_Unit.cpp.s
+
+.PHONY : InGameObjects/Custom_Unit.s
+
+# target to generate assembly for a file
+InGameObjects/Custom_Unit.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.s
+.PHONY : InGameObjects/Custom_Unit.cpp.s
+
+InGameObjects/GameObjectFactory.o: InGameObjects/GameObjectFactory.cpp.o
+
+.PHONY : InGameObjects/GameObjectFactory.o
+
+# target to build an object file
+InGameObjects/GameObjectFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o
+.PHONY : InGameObjects/GameObjectFactory.cpp.o
+
+InGameObjects/GameObjectFactory.i: InGameObjects/GameObjectFactory.cpp.i
+
+.PHONY : InGameObjects/GameObjectFactory.i
+
+# target to preprocess a source file
+InGameObjects/GameObjectFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.i
+.PHONY : InGameObjects/GameObjectFactory.cpp.i
+
+InGameObjects/GameObjectFactory.s: InGameObjects/GameObjectFactory.cpp.s
+
+.PHONY : InGameObjects/GameObjectFactory.s
+
+# target to generate assembly for a file
+InGameObjects/GameObjectFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.s
+.PHONY : InGameObjects/GameObjectFactory.cpp.s
+
 InGameObjects/Player.o: InGameObjects/Player.cpp.o
 
 .PHONY : InGameObjects/Player.o
@@ -243,6 +378,87 @@ InGameObjects/Player.s: InGameObjects/Player.cpp.s
 InGameObjects/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Player.cpp.s
 .PHONY : InGameObjects/Player.cpp.s
+
+InGameObjects/Squad.o: InGameObjects/Squad.cpp.o
+
+.PHONY : InGameObjects/Squad.o
+
+# target to build an object file
+InGameObjects/Squad.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.o
+.PHONY : InGameObjects/Squad.cpp.o
+
+InGameObjects/Squad.i: InGameObjects/Squad.cpp.i
+
+.PHONY : InGameObjects/Squad.i
+
+# target to preprocess a source file
+InGameObjects/Squad.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.i
+.PHONY : InGameObjects/Squad.cpp.i
+
+InGameObjects/Squad.s: InGameObjects/Squad.cpp.s
+
+.PHONY : InGameObjects/Squad.s
+
+# target to generate assembly for a file
+InGameObjects/Squad.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Squad.cpp.s
+.PHONY : InGameObjects/Squad.cpp.s
+
+InGameObjects/Warrior.o: InGameObjects/Warrior.cpp.o
+
+.PHONY : InGameObjects/Warrior.o
+
+# target to build an object file
+InGameObjects/Warrior.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o
+.PHONY : InGameObjects/Warrior.cpp.o
+
+InGameObjects/Warrior.i: InGameObjects/Warrior.cpp.i
+
+.PHONY : InGameObjects/Warrior.i
+
+# target to preprocess a source file
+InGameObjects/Warrior.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.i
+.PHONY : InGameObjects/Warrior.cpp.i
+
+InGameObjects/Warrior.s: InGameObjects/Warrior.cpp.s
+
+.PHONY : InGameObjects/Warrior.s
+
+# target to generate assembly for a file
+InGameObjects/Warrior.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/Warrior.cpp.s
+.PHONY : InGameObjects/Warrior.cpp.s
+
+InGameObjects/WarriorFactory.o: InGameObjects/WarriorFactory.cpp.o
+
+.PHONY : InGameObjects/WarriorFactory.o
+
+# target to build an object file
+InGameObjects/WarriorFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o
+.PHONY : InGameObjects/WarriorFactory.cpp.o
+
+InGameObjects/WarriorFactory.i: InGameObjects/WarriorFactory.cpp.i
+
+.PHONY : InGameObjects/WarriorFactory.i
+
+# target to preprocess a source file
+InGameObjects/WarriorFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.i
+.PHONY : InGameObjects/WarriorFactory.cpp.i
+
+InGameObjects/WarriorFactory.s: InGameObjects/WarriorFactory.cpp.s
+
+.PHONY : InGameObjects/WarriorFactory.s
+
+# target to generate assembly for a file
+InGameObjects/WarriorFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.s
+.PHONY : InGameObjects/WarriorFactory.cpp.s
 
 Main/Board.o: Main/Board.cpp.o
 
@@ -587,9 +803,33 @@ help:
 	@echo "... BattleField/Level.o"
 	@echo "... BattleField/Level.i"
 	@echo "... BattleField/Level.s"
+	@echo "... InGameObjects/Archer.o"
+	@echo "... InGameObjects/Archer.i"
+	@echo "... InGameObjects/Archer.s"
+	@echo "... InGameObjects/Army.o"
+	@echo "... InGameObjects/Army.i"
+	@echo "... InGameObjects/Army.s"
+	@echo "... InGameObjects/Building.o"
+	@echo "... InGameObjects/Building.i"
+	@echo "... InGameObjects/Building.s"
+	@echo "... InGameObjects/Custom_Unit.o"
+	@echo "... InGameObjects/Custom_Unit.i"
+	@echo "... InGameObjects/Custom_Unit.s"
+	@echo "... InGameObjects/GameObjectFactory.o"
+	@echo "... InGameObjects/GameObjectFactory.i"
+	@echo "... InGameObjects/GameObjectFactory.s"
 	@echo "... InGameObjects/Player.o"
 	@echo "... InGameObjects/Player.i"
 	@echo "... InGameObjects/Player.s"
+	@echo "... InGameObjects/Squad.o"
+	@echo "... InGameObjects/Squad.i"
+	@echo "... InGameObjects/Squad.s"
+	@echo "... InGameObjects/Warrior.o"
+	@echo "... InGameObjects/Warrior.i"
+	@echo "... InGameObjects/Warrior.s"
+	@echo "... InGameObjects/WarriorFactory.o"
+	@echo "... InGameObjects/WarriorFactory.i"
+	@echo "... InGameObjects/WarriorFactory.s"
 	@echo "... Main/Board.o"
 	@echo "... Main/Board.i"
 	@echo "... Main/Board.s"

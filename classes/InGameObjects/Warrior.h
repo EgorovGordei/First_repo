@@ -5,14 +5,10 @@ protected:
 	int power_ = 0;
 	int health_ = 0;
 public:
-	int GetHealth() { return health_; }
-	int GetPower() { return power_; }
-	void DealDamage(int dx) {
-		health_ = (health_ - dx > 0 ? health_ -dx: 0);
-	}
-	void SetUniversalId() {
-		universal_id = 2;
-	}
+	int GetHealth();
+	int GetPower();
+	void DealDamage(int dx);
+	void SetUniversalId();
 
 	virtual void ChangeHealth(int dx) = 0;
 	virtual void ChangePower(int dx) = 0;
@@ -24,5 +20,6 @@ public:
 	virtual int GetDistanceOfWalk() = 0;
 	virtual int GetId() = 0;
 
-	virtual ~Warrior() {}
+	virtual ~Warrior();
 };
+

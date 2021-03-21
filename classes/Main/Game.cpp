@@ -7,7 +7,7 @@ Game::Game(Menu* menu) : menu_(menu), stats_(menu->stats), environment_(10, 5, s
 
 void Game::MainLoop()
 {
-	// get new PainterMenu
+	// get new PainterGame
 	PainterGame PG(menu_, environment_.board, environment_.level);
 	PG.SetStep(step);
 	PG.ClearScreen();

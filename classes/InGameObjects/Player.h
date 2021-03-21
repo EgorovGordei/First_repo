@@ -1,13 +1,13 @@
 #pragma once
-//#include "Army.h"
-//#include "PlayerBuildings.h"
+#include "Army.h"
+#include "PlayerBuildings.h"
 #include "Board.h"
 #include "Stats.h"
 #include <map>
 
 class Player {
 public:
-//	Army army;
+	Army army;
 //	PlayerBuildings buildings;
 	Player(bool id, Board& board);
 	Player(Stats& stats, Board& board);

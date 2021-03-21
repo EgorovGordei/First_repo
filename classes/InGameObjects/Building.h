@@ -8,16 +8,10 @@ protected:
 	int y_ = -1;
 	int health_ = 0;
 public:
-	void ChangeHealth(int dx) {
-		health_ = (health_ - dx > 0 ? health_ - dx : 0);
-	}
+	void ChangeHealth(int dx);
 	virtual int GetBuildingId() = 0;
-	int Gethealth() {
-		return health_;
-	}
+	int Gethealth();
 	virtual int GetMaxHealth() = 0;
 
-	std::pair<int, int> GetCoordinates() {
-		return std::make_pair(x_, y_);
-	}
+	std::pair<int, int> GetCoordinates();
 };

@@ -11,12 +11,87 @@ CMakeFiles/main.dir/BattleField/Level.cpp.o
  ../BattleField/Cell.h
  ../BattleField/Level.h
  /home/swarm/mipt_atp_patterns/classes/BattleField/Level.cpp
+CMakeFiles/main.dir/InGameObjects/Archer.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+CMakeFiles/main.dir/InGameObjects/Army.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Army.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Army.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/BuildingFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Castle.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObject.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObjectFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
+CMakeFiles/main.dir/InGameObjects/Building.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObject.h
+CMakeFiles/main.dir/InGameObjects/Custom_Unit.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+CMakeFiles/main.dir/InGameObjects/GameObjectFactory.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/BuildingFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Castle.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObject.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObjectFactory.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObjectFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
 CMakeFiles/main.dir/InGameObjects/Player.cpp.o
  ../Additional/Stats.h
  ../InGameObjects/GameObject.h
  ../Main/Board.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Army.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Building.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/BuildingFactory.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Castle.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObjectFactory.h
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Player.cpp
  /home/swarm/mipt_atp_patterns/classes/InGameObjects/Player.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/PlayerBuildings.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
+CMakeFiles/main.dir/InGameObjects/Squad.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/GameObject.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Squad.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
+CMakeFiles/main.dir/InGameObjects/Warrior.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+CMakeFiles/main.dir/InGameObjects/WarriorFactory.cpp.o
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Archer.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Cavalery.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Custom_Unit.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Swordsman.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/Warrior.h
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.cpp
+ /home/swarm/mipt_atp_patterns/classes/InGameObjects/WarriorFactory.h
 CMakeFiles/main.dir/Main/Board.cpp.o
  ../InGameObjects/GameObject.h
  /home/swarm/mipt_atp_patterns/classes/Main/Board.cpp
@@ -25,8 +100,21 @@ CMakeFiles/main.dir/Main/Environment.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  /home/swarm/mipt_atp_patterns/classes/Main/Board.h
  /home/swarm/mipt_atp_patterns/classes/Main/Environment.cpp
  /home/swarm/mipt_atp_patterns/classes/Main/Environment.h
@@ -34,8 +122,21 @@ CMakeFiles/main.dir/Main/Game.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -55,8 +156,21 @@ CMakeFiles/main.dir/Main/Menu.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -75,8 +189,21 @@ CMakeFiles/main.dir/Main/Shop.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -103,8 +230,21 @@ CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -123,8 +263,21 @@ CMakeFiles/main.dir/Painter/PainterGame.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -144,8 +297,21 @@ CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -164,8 +330,21 @@ CMakeFiles/main.dir/Painter/PainterShop.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
@@ -185,8 +364,21 @@ CMakeFiles/main.dir/main.cpp.o
  ../Additional/Stats.h
  ../BattleField/Cell.h
  ../BattleField/Level.h
+ ../InGameObjects/Archer.h
+ ../InGameObjects/Army.h
+ ../InGameObjects/Building.h
+ ../InGameObjects/BuildingFactory.h
+ ../InGameObjects/Castle.h
+ ../InGameObjects/Cavalery.h
+ ../InGameObjects/Custom_Unit.h
  ../InGameObjects/GameObject.h
+ ../InGameObjects/GameObjectFactory.h
  ../InGameObjects/Player.h
+ ../InGameObjects/PlayerBuildings.h
+ ../InGameObjects/Squad.h
+ ../InGameObjects/Swordsman.h
+ ../InGameObjects/Warrior.h
+ ../InGameObjects/WarriorFactory.h
  ../Input/InputController.h
  ../Input/InputFactory.h
  ../Input/InputKeyboard.h
