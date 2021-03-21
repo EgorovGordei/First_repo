@@ -5,6 +5,8 @@
 #include <vector>
 #include <utility>
 #include <memory>
+#include <math.h>
+
 class Squad: public GameObject {
 private:
 	int warrior_id_ = -1; // id войнов, состоящих в этом отряде

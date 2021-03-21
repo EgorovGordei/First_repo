@@ -24,6 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Painter"
   "../Additional"
   "../BattleField"
+  "../InGameObjects"
   )
 
 # Targets to which this target links.

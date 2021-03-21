@@ -22,6 +22,7 @@ public:
 	std::vector<Cell>& operator[](unsigned i);
 	int GetWidth();
 	int GetHeight();
+	int GetAmountOfPlayers();
 	std::string GetName();
 	void SetName(std::string name);
 

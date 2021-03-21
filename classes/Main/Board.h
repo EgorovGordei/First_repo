@@ -1,12 +1,6 @@
 #pragma once
 #include <vector>
-
-// include GameObject
-class GameObject
-{
-public:
-	int s = 0;
-};
+#include "GameObject.h"
 
 class Board
 {

@@ -3,7 +3,7 @@
 #include "InputFactory.h"
 #include "PainterGame.h"
 
-Game::Game(Menu* menu) : menu_(menu), stats_(menu->stats), environment_(10, 5) {}
+Game::Game(Menu* menu) : menu_(menu), stats_(menu->stats), environment_(10, 5, stats_) {}
 
 void Game::MainLoop()
 {

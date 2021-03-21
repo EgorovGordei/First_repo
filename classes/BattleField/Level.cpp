@@ -1,15 +1,5 @@
 #include <Level.h>
 
-/*
-std::vector<std::vector<Cell>> cells_;
-int width_ = 0;
-int height_ = 0;
-std::string name_;
-int amount_of_players_ = 2;
-std::vector<std::vector<std::pair<int, int>>> castle_start_positions_;
-
-const std::string PATH_TO_LEVELS = "./data/levels.txt";
-*/
 
 Level::Level(std::string name)
 {
@@ -49,6 +39,11 @@ int Level::GetWidth()
 int Level::GetHeight()
 {
 	return height_;
+}
+
+int Level::GetAmountOfPlayers()
+{
+	return amount_of_players_; 
 }
 
 std::string Level::GetName()
