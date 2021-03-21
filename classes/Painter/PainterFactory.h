@@ -6,8 +6,10 @@
 
 class PainterFactory
 {
+private:
+	static std::shared_ptr<Painter> last_painter_;
 public:
-	static std::unique_ptr<Painter> GetPainter();
+	static std::shared_ptr<Painter> GetPainter();
 };
 
 

@@ -6,17 +6,15 @@
 
 class Menu;
 
-class PainterMenu
+class PainterShop
 {
 private:
 	std::shared_ptr<Painter> painter_;
 	Menu* menu_;
 	int step_ = 0;
 	int i_ = 0;
-	std::string val_;
-	std::string player_name_;
 public:
-	PainterMenu(Menu* menu);
+	PainterShop(Menu* menu);
 	void ClearScreen();
 
 	void SetStep(int step);

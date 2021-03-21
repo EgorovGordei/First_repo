@@ -1,7 +1,10 @@
 #include "PainterFactory.h"
 
-std::unique_ptr<Painter> PainterFactory::GetPainter()
+std::shared_ptr<Painter> PainterFactory::last_painter_ = nullptr;
+
+std::shared_ptr<Painter> PainterFactory::GetPainter()
 {
-	return std::unique_ptr<Painter>(new PainterConsole());
+	if (last_painter_.get() == nullptr) last_painter_ = std::shared_ptr<Painter>(new PainterConsole());
+	return last_painter_;
 }
 

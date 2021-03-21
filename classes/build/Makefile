@@ -190,6 +190,33 @@ Main/Menu.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Menu.cpp.s
 .PHONY : Main/Menu.cpp.s
 
+Main/Shop.o: Main/Shop.cpp.o
+
+.PHONY : Main/Shop.o
+
+# target to build an object file
+Main/Shop.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.o
+.PHONY : Main/Shop.cpp.o
+
+Main/Shop.i: Main/Shop.cpp.i
+
+.PHONY : Main/Shop.i
+
+# target to preprocess a source file
+Main/Shop.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.i
+.PHONY : Main/Shop.cpp.i
+
+Main/Shop.s: Main/Shop.cpp.s
+
+.PHONY : Main/Shop.s
+
+# target to generate assembly for a file
+Main/Shop.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Main/Shop.cpp.s
+.PHONY : Main/Shop.cpp.s
+
 Painter/Painter.o: Painter/Painter.cpp.o
 
 .PHONY : Painter/Painter.o
@@ -298,6 +325,33 @@ Painter/PainterMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterMenu.cpp.s
 .PHONY : Painter/PainterMenu.cpp.s
 
+Painter/PainterShop.o: Painter/PainterShop.cpp.o
+
+.PHONY : Painter/PainterShop.o
+
+# target to build an object file
+Painter/PainterShop.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.o
+.PHONY : Painter/PainterShop.cpp.o
+
+Painter/PainterShop.i: Painter/PainterShop.cpp.i
+
+.PHONY : Painter/PainterShop.i
+
+# target to preprocess a source file
+Painter/PainterShop.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.i
+.PHONY : Painter/PainterShop.cpp.i
+
+Painter/PainterShop.s: Painter/PainterShop.cpp.s
+
+.PHONY : Painter/PainterShop.s
+
+# target to generate assembly for a file
+Painter/PainterShop.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Painter/PainterShop.cpp.s
+.PHONY : Painter/PainterShop.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -341,6 +395,9 @@ help:
 	@echo "... Main/Menu.o"
 	@echo "... Main/Menu.i"
 	@echo "... Main/Menu.s"
+	@echo "... Main/Shop.o"
+	@echo "... Main/Shop.i"
+	@echo "... Main/Shop.s"
 	@echo "... Painter/Painter.o"
 	@echo "... Painter/Painter.i"
 	@echo "... Painter/Painter.s"
@@ -353,6 +410,9 @@ help:
 	@echo "... Painter/PainterMenu.o"
 	@echo "... Painter/PainterMenu.i"
 	@echo "... Painter/PainterMenu.s"
+	@echo "... Painter/PainterShop.o"
+	@echo "... Painter/PainterShop.i"
+	@echo "... Painter/PainterShop.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

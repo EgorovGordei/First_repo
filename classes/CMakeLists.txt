@@ -13,7 +13,7 @@ project(main)
 # create executable
 set(CDIR ${CMAKE_SOURCE_DIR})
 include_directories(${CDIR} "${CDIR}/Input/" "${CDIR}/Main/" "${CDIR}/Painter/" "${CDIR}/Additional/")
-add_executable(main main.cpp Main/Menu.cpp Main/Menu.h Painter/PainterMenu.cpp Painter/PainterMenu.h Painter/PainterFactory.cpp Painter/PainterFactory.h Painter/Painter.h Painter/Painter.cpp Painter/PainterConsole.h Painter/PainterConsole.cpp Additional/Stats.cpp Additional/Stats.h)
+add_executable(main main.cpp Main/Menu.cpp Main/Menu.h Main/Shop.h Main/Shop.cpp Painter/PainterMenu.cpp Painter/PainterMenu.h Painter/PainterShop.cpp Painter/Painter.h Painter/PainterFactory.cpp Painter/PainterFactory.h Painter/Painter.h Painter/Painter.cpp Painter/PainterConsole.h Painter/PainterConsole.cpp Additional/Stats.cpp Additional/Stats.h)
 
 # step 2
 # compile InputController.lib

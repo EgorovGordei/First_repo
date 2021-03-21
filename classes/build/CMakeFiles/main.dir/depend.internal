@@ -16,6 +16,21 @@ CMakeFiles/main.dir/Main/Menu.cpp.o
  ../Painter/PainterMenu.h
  /home/swarm/mipt_atp_patterns/classes/Main/Menu.cpp
  /home/swarm/mipt_atp_patterns/classes/Main/Menu.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Shop.h
+CMakeFiles/main.dir/Main/Shop.cpp.o
+ ../Additional/Stats.h
+ ../Input/InputController.h
+ ../Input/InputFactory.h
+ ../Input/InputKeyboard.h
+ ../Input/kbhit.h
+ ../Main/Menu.h
+ ../Painter/Painter.h
+ ../Painter/PainterConsole.h
+ ../Painter/PainterFactory.h
+ ../Painter/PainterMenu.h
+ ../Painter/PainterShop.h
+ /home/swarm/mipt_atp_patterns/classes/Main/Shop.cpp
+ /home/swarm/mipt_atp_patterns/classes/Main/Shop.h
 CMakeFiles/main.dir/Painter/Painter.cpp.o
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.cpp
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
@@ -30,6 +45,7 @@ CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
  ../Main/Menu.h
+ ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.cpp
@@ -42,11 +58,26 @@ CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
  ../Main/Menu.h
+ ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.h
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.cpp
  /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.h
+CMakeFiles/main.dir/Painter/PainterShop.cpp.o
+ ../Additional/Stats.h
+ ../Input/InputController.h
+ ../Input/InputFactory.h
+ ../Input/InputKeyboard.h
+ ../Input/kbhit.h
+ ../Main/Menu.h
+ ../Main/Shop.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/Painter.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.h
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.cpp
+ /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.h
 CMakeFiles/main.dir/main.cpp.o
  ../Additional/Stats.h
  ../Input/InputController.h
@@ -54,4 +85,5 @@ CMakeFiles/main.dir/main.cpp.o
  ../Input/InputKeyboard.h
  ../Input/kbhit.h
  ../Main/Menu.h
+ ../Main/Shop.h
  /home/swarm/mipt_atp_patterns/classes/main.cpp

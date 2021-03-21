@@ -47,8 +47,10 @@ bool PainterMenu::ProcessKey(char key)
 		{
 			if (i_ == 0)
 				step_ = 2;
-			if (i_ == 2)
+			if (i_ == 1)
 				step_ = 3;
+			if (i_ == 2)
+				step_ = 4;
 		}
 		else
 		{
@@ -67,7 +69,7 @@ bool PainterMenu::ProcessKey(char key)
 			painter_->print("Play\n");
 			if (i_ == 0) painter_->set_white();
 			if (i_ == 1) painter_->set_red();
-			painter_->print("Shop (NOT DEVELOPED YET)\n");
+			painter_->print("Shop\n");
 			if (i_ == 1) painter_->set_white();
 			if (i_ == 2) painter_->set_red();
 			painter_->print("Something else\n");
@@ -80,8 +82,8 @@ bool PainterMenu::ProcessKey(char key)
 		if (key == 'q')
 		{
 			step_ = 1;
-			ProcessKey(0);
 			i_ = 0;
+			ProcessKey(0);
 		}
 		else
 		{
@@ -96,11 +98,18 @@ bool PainterMenu::ProcessKey(char key)
 	}
 	if (step_ == 3)
 	{
+		menu_->shop.MainLoop();
+		step_ = 1;
+		i_ = 0;
+		ProcessKey(0);
+	}
+	if (step_ == 4)
+	{
 		if (key == 'q')
 		{
 			step_ = 1;
-			ProcessKey(0);
 			i_ = 0;
+			ProcessKey(0);
 		}
 		else
 		{
@@ -110,6 +119,7 @@ bool PainterMenu::ProcessKey(char key)
 			painter_->print("/\\/\\\n\\  /\n \\/ \n");
 			painter_->set_red();
 			painter_->print("It's just for something in future");
+			painter_->set_white();
 			painter_->flush();
 		}
 	}

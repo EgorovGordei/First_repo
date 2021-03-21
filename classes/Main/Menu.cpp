@@ -3,7 +3,7 @@
 #include "InputFactory.h"
 #include "PainterMenu.h"
 
-Menu::Menu() 
+Menu::Menu() : IC(InputFactory::GetInputController()), shop(this) 
 {
 	bool b = stats.LoadLastPlayer();
 	// no need to create new player
@@ -12,8 +12,6 @@ Menu::Menu()
 
 void Menu::MainLoop()
 {
-	// get new InputController
-	std::unique_ptr<InputController> IC = InputFactory::GetInputController();
 	// get new PainterMenu
 	PainterMenu PM(this);
 	PM.SetStep(step);

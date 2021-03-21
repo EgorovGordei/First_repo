@@ -3,6 +3,8 @@
 #include "InputController.h"
 #include "InputFactory.h"
 #include "Stats.h"
+#include "Shop.h"
+#include <memory>
 
 #include <vector>
 
@@ -16,7 +18,10 @@ public:
 	const int START_MONEY = 10;
 	const std::vector<int> START_UNITS_IDS = { 0, 1, 2 };
 
+	std::shared_ptr<InputController> IC;
 	Stats stats;
+	Shop shop;
+
 	Menu();
 	void MainLoop();
 };

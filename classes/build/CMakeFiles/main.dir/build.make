@@ -83,9 +83,22 @@ CMakeFiles/main.dir/Main/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Main/Menu.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/Main/Menu.cpp -o CMakeFiles/main.dir/Main/Menu.cpp.s
 
+CMakeFiles/main.dir/Main/Shop.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Main/Shop.cpp.o: ../Main/Shop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Main/Shop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Main/Shop.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Main/Shop.cpp
+
+CMakeFiles/main.dir/Main/Shop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Main/Shop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swarm/mipt_atp_patterns/classes/Main/Shop.cpp > CMakeFiles/main.dir/Main/Shop.cpp.i
+
+CMakeFiles/main.dir/Main/Shop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Main/Shop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/Main/Shop.cpp -o CMakeFiles/main.dir/Main/Shop.cpp.s
+
 CMakeFiles/main.dir/Painter/PainterMenu.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Painter/PainterMenu.cpp.o: ../Painter/PainterMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Painter/PainterMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Painter/PainterMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Painter/PainterMenu.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.cpp
 
 CMakeFiles/main.dir/Painter/PainterMenu.cpp.i: cmake_force
@@ -96,9 +109,22 @@ CMakeFiles/main.dir/Painter/PainterMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Painter/PainterMenu.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/Painter/PainterMenu.cpp -o CMakeFiles/main.dir/Painter/PainterMenu.cpp.s
 
+CMakeFiles/main.dir/Painter/PainterShop.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Painter/PainterShop.cpp.o: ../Painter/PainterShop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/Painter/PainterShop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Painter/PainterShop.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.cpp
+
+CMakeFiles/main.dir/Painter/PainterShop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Painter/PainterShop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.cpp > CMakeFiles/main.dir/Painter/PainterShop.cpp.i
+
+CMakeFiles/main.dir/Painter/PainterShop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Painter/PainterShop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swarm/mipt_atp_patterns/classes/Painter/PainterShop.cpp -o CMakeFiles/main.dir/Painter/PainterShop.cpp.s
+
 CMakeFiles/main.dir/Painter/PainterFactory.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Painter/PainterFactory.cpp.o: ../Painter/PainterFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Painter/PainterFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/Painter/PainterFactory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Painter/PainterFactory.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Painter/PainterFactory.cpp
 
 CMakeFiles/main.dir/Painter/PainterFactory.cpp.i: cmake_force
@@ -111,7 +137,7 @@ CMakeFiles/main.dir/Painter/PainterFactory.cpp.s: cmake_force
 
 CMakeFiles/main.dir/Painter/Painter.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Painter/Painter.cpp.o: ../Painter/Painter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/Painter/Painter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/Painter/Painter.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Painter/Painter.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Painter/Painter.cpp
 
 CMakeFiles/main.dir/Painter/Painter.cpp.i: cmake_force
@@ -124,7 +150,7 @@ CMakeFiles/main.dir/Painter/Painter.cpp.s: cmake_force
 
 CMakeFiles/main.dir/Painter/PainterConsole.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Painter/PainterConsole.cpp.o: ../Painter/PainterConsole.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/Painter/PainterConsole.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/Painter/PainterConsole.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Painter/PainterConsole.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Painter/PainterConsole.cpp
 
 CMakeFiles/main.dir/Painter/PainterConsole.cpp.i: cmake_force
@@ -137,7 +163,7 @@ CMakeFiles/main.dir/Painter/PainterConsole.cpp.s: cmake_force
 
 CMakeFiles/main.dir/Additional/Stats.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Additional/Stats.cpp.o: ../Additional/Stats.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/Additional/Stats.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/Additional/Stats.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Additional/Stats.cpp.o -c /home/swarm/mipt_atp_patterns/classes/Additional/Stats.cpp
 
 CMakeFiles/main.dir/Additional/Stats.cpp.i: cmake_force
@@ -152,7 +178,9 @@ CMakeFiles/main.dir/Additional/Stats.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/Main/Menu.cpp.o" \
+"CMakeFiles/main.dir/Main/Shop.cpp.o" \
 "CMakeFiles/main.dir/Painter/PainterMenu.cpp.o" \
+"CMakeFiles/main.dir/Painter/PainterShop.cpp.o" \
 "CMakeFiles/main.dir/Painter/PainterFactory.cpp.o" \
 "CMakeFiles/main.dir/Painter/Painter.cpp.o" \
 "CMakeFiles/main.dir/Painter/PainterConsole.cpp.o" \
@@ -163,7 +191,9 @@ main_EXTERNAL_OBJECTS =
 
 bin/main: CMakeFiles/main.dir/main.cpp.o
 bin/main: CMakeFiles/main.dir/Main/Menu.cpp.o
+bin/main: CMakeFiles/main.dir/Main/Shop.cpp.o
 bin/main: CMakeFiles/main.dir/Painter/PainterMenu.cpp.o
+bin/main: CMakeFiles/main.dir/Painter/PainterShop.cpp.o
 bin/main: CMakeFiles/main.dir/Painter/PainterFactory.cpp.o
 bin/main: CMakeFiles/main.dir/Painter/Painter.cpp.o
 bin/main: CMakeFiles/main.dir/Painter/PainterConsole.cpp.o
@@ -171,7 +201,7 @@ bin/main: CMakeFiles/main.dir/Additional/Stats.cpp.o
 bin/main: CMakeFiles/main.dir/build.make
 bin/main: lib/libInputController.lib.so
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swarm/mipt_atp_patterns/classes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
