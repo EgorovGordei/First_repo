@@ -4,6 +4,8 @@
 // include GameObject
 class GameObject
 {
+public:
+	int s = 0;
 };
 
 class Board

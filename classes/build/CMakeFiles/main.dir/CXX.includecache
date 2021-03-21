@@ -183,8 +183,6 @@ Cell.h
 /home/swarm/mipt_atp_patterns/classes/BattleField/Level.cpp
 Level.h
 -
-iostream
--
 
 /home/swarm/mipt_atp_patterns/classes/Main/Board.cpp
 Board.h

@@ -25,3 +25,8 @@ void PainterConsole::set_white()
 	color_ = "\033[0m";
 }
 
+void PainterConsole::set_green()
+{
+	color_ = "\033[0;32m";
+}
+

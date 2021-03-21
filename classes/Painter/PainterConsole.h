@@ -16,6 +16,7 @@ public:
 
 	void set_red() override;
 	void set_white() override;
+	void set_green() override;
 };
 
 

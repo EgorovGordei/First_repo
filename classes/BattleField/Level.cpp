@@ -15,10 +15,9 @@ Level::Level(std::string name)
 {
 	LoadLevel(name);	
 }
-#include <iostream>
+
 bool Level::LoadLevel(std::string& name)
 {
-	std::cout << "LEVEL_LOADING";
 	// need to download
 	//
 	width_ = 5;

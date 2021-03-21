@@ -20,8 +20,8 @@ bool PainterGame::ProcessKey(char key)
 
 		if (key == 65) --y_;
 		if (key == 66) ++y_;
-		if (key == 67) --x_;
-		if (key == 68) ++x_;
+		if (key == 68) --x_;
+		if (key == 67) ++x_;
 		if (y_ < 0) y_ = 0;
 		if (y_ >= board_.GetHeight()) y_ = board_.GetHeight() - 1;
 		if (x_ < 0) x_ = 0;
@@ -30,13 +30,13 @@ bool PainterGame::ProcessKey(char key)
 		painter_->cls();	
 		painter_->print("Press Q to exit\nI'm a game class!\n");
 		//int x = 0;
-		for (int x = 0; x < board_.GetWidth(); ++x)
+		for (int y = 0; y < board_.GetHeight(); ++y)
 		{
 			//int y = 0;
-			for (int y = 0; y < board_.GetHeight(); ++y)
+			for (int x = 0; x < board_.GetWidth(); ++x)
 			{
 				if (level_[x][y].i == 1)
-					painter_->set_red();
+					painter_->set_green();
 
 				if (x_ == x && y_ == y)
 					painter_->set_red();
@@ -47,11 +47,8 @@ bool PainterGame::ProcessKey(char key)
 					painter_->print("!");
 
 				painter_->set_white();
-
-				++y;
 			}
 			painter_->print("\n");
-			++x;
 		}	
 		painter_->flush();
 	}

@@ -13,8 +13,8 @@ private:
 	std::vector<Player> players_;
 	int turn_ = 0;
 public:
-	Board board;
 	Level level;
+	Board board;
 
 	Environment(int screen_width, int screen_height);
 };

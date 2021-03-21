@@ -12,6 +12,7 @@ public:
 
 	virtual void set_red() = 0;
 	virtual void set_white() = 0;
+	virtual void set_green() = 0;
 };
 
 
