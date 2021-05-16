@@ -31,7 +31,7 @@ public:
 
     //explicit TupleBase(const Head& first, const Args&... args) : TupleBase<i + 1, Args...>(args), TupleNode<i, Head>(first) { std::cerr << "TBc" << i << " "; }
     explicit TupleBase(Head&& first, Args&&... args);
-    explicit TupleBase(const Head&& first, Args&&... args);
+    explicit TupleBase(const Head& first, Args&&... args);
 
     //template <size_t i_other, typename Head_other, typename ...Args_other>
     //TupleBase(const TupleBase& other) : TupleBase<i + 1, Args>(other), TupleNode<i, Head>(other.TupleNode<i, Head_other>::value) {}
@@ -45,7 +45,7 @@ template <size_t i, typename Head, typename ...Args>
 TupleBase<i, Head, Args...>::TupleBase(Head&& first, Args&&... args) : TupleBase<i + 1, Args...>(std::forward<Args>(args)...),
                                                    TupleNode<i, Head>(std::forward<Head>(first)) { std::cerr << "TBm." << i; }
 template <size_t i, typename Head, typename ...Args>
-TupleBase<i, Head, Args...>::TupleBase(const Head&& first, Args&&... args) : TupleBase<i + 1, Args...>(std::forward<Args>(args)...),
+TupleBase<i, Head, Args...>::TupleBase(const Head& first, Args&&... args) : TupleBase<i + 1, Args...>(std::forward<Args>(args)...),
                                                         TupleNode<i, Head>(first) { std::cerr << "TBm," << i; }
 
 
@@ -75,6 +75,6 @@ int main()
 
     Accounter a(0);
     Tuple<Accounter, int, Accounter> t3(a, 0, Accounter(1));
-    Tuple<Accounter, int, Accounter, Accounter> t4(Accounter(2), 0, Accounter(3), a);
+    Tuple<Accounter, int, Accounter, Accounter, Accounter> t4(Accounter(2), 0, Accounter(3), a, Accounter(100));
     Tuple<Accounter, int, Accounter, Accounter> t5(a, 0, Accounter(4), a);
 }
