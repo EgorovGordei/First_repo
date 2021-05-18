@@ -87,21 +87,47 @@ Head&& Get(TupleBase<i, Head, Args...>&& tuple)
 //    get_by_t(const TupleBase<i, Head, Args...>& tuple) : val(tuple.TupleNode<j, T>::value) {}
 //};
 
-template<typename T, size_t i, typename Head, typename ...Args, typename = std::enable_if_t<!std::is_same_v<T, Head>>>
-constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple);
+template<typename T, size_t i, typename ...Args>
+constexpr const T& Get(const TupleBase<i, T, Args...>& tuple);
+template<typename T, size_t i, typename ...Args>
+constexpr const T& Get(const TupleBase<i, Args...>& tuple);
 
+template<typename T, size_t i, typename Head, typename ...Args>
+constexpr const T& _Get(const TupleBase<i, Head, Args...>& tuple)
+{
+    return Get<T, i + 1, Args...>(tuple);
+}
+
+template<typename T, size_t i, typename ...Args>
+constexpr const T& Get(const TupleBase<i, Args...>& tuple)
+{
+    return _Get<T, i, Args...>(tuple);
+}
 template<typename T, size_t i, typename ...Args>
 constexpr const T& Get(const TupleBase<i, T, Args...>& tuple)
 {
     return tuple.TupleNode<i, T>::value;
 }
-template<typename T, size_t i, typename Head, typename ...Args, typename = std::enable_if_t<!std::is_same_v<T, Head>>>
-constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple)
-{
-    return Get<T, i + 1, Args...>(tuple);
-}
 
 
+//template<typename T, size_t i, typename Head, typename ...Args>
+//constexpr const T& _Get(const WithArgs<Head, Args...>& tuple)
+//{
+//    std::cout << "c" << i << " " << typeid(Head).name() << "|";
+//    return Get<T, i + 1, Args...>(tuple);
+//}
+//template<typename T, size_t i, typename ...Args>
+//constexpr const T& Get(const WithArgs<Args...>& tuple)
+//{
+//    std::cout << "b" << i << " " << typeid(T).name() << "|";
+//    return _Get<T, i, Args...>(tuple);
+//}
+//template<typename T, size_t i, typename ...Args>
+//constexpr const T& Get(const WithArgs<T, Args...>& tuple)
+//{
+//    std::cout << "a" << i << " " << typeid(T).name() << "|";
+//    return tuple.h;
+//}
 
 
 #include <iostream>
@@ -145,6 +171,7 @@ int main()
 
 
     std::cout << Get<int>(t3);
+    std::cout << Get<Accounter>(t3);
     //std::cout << Get<int>(t4);
     //std::cout << Get<int>(Tuple<Accounter, int, Accounter, Accounter>(a, 0, Accounter(4), a));
 }
