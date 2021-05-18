@@ -79,12 +79,23 @@
 //    MyStruct(int i, int d, int s, int q) {}
 //};
 
+template <typename Head, typename ...Args>
+struct WithArgs;
 
-template <typename ...Args>
-struct WithArgs
+template <typename Head>
+struct WithArgs<Head>
 {
-    template <typename ...Args2>
-    WithArgs(Args2&&... args) {}
+    Head h;
+    template <typename Head2>
+    WithArgs(Head2&& h) : h(std::forward<Head>(h)) {}
+};
+
+template <typename Head, typename ...Args>
+struct WithArgs : WithArgs<Args...>
+{
+    Head h;
+    template <typename Head2, typename ...Args2>
+    WithArgs(Head2&& h,Args2&&... args) : WithArgs<Args...>(std::forward<Args>(args)...),h(std::forward<Head>(h)) {}
 };
 
 
@@ -127,15 +138,15 @@ template<typename T, size_t i, typename ...Args>
 constexpr const T& Get(const WithArgs<T, Args...>& tuple)
 {
     std::cout << "a" << i << " " << typeid(T).name() << "|";
-    return T();
+    return tuple.h;
 }
 
 
 int main() 
 {
-    Get<double, 0>(WithArgs<int, double, int>());
-    Get<double, 0>(WithArgs<int, double>());
-    Get<double, 0>(WithArgs<int, int, std::string, double>());
+    Get<double, 0>(WithArgs<int, double, int>(0,0,0));
+    Get<double, 0>(WithArgs<int, double>(0,0));
+    Get<double, 0>(WithArgs<int, int, float, double>(0,0,0,0));
 
     /*int ia = 0;
     const int ib = 1;
