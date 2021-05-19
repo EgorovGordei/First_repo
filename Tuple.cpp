@@ -1,6 +1,6 @@
 #include <iostream>
 #include <utility>
-
+#include <type_traits>
 
 
 
@@ -25,7 +25,7 @@ public:
     TupleBase() : TupleBase<i + 1, Args...>(), value() {}
 
     template <typename Head2, typename ...Args2>
-    TupleBase(Head2&& head, Args2&&... args) : TupleBase<i + 1, Args...>(std::forward<Args2>(args)...), value(std::forward<Head2>(head)) {}
+    explicit TupleBase(Head2&& head, Args2&&... args) : TupleBase<i + 1, Args...>(std::forward<Args2>(args)...), value(std::forward<Head2>(head)) {}
 
     //template <typename Head2, typename ...Args2>
     //TupleBase(const TupleBase& other) : TupleBase<i + 1, Args...>(other), TupleNode<i, Head>(other.TupleNode<i, Head_other>::value) {}
@@ -39,87 +39,78 @@ template<typename... Args>
 using Tuple = TupleBase<0, Args...>;
 
 
-template<std::size_t i, typename Head, typename ...Args>
-Head& Get(TupleBase<i, Head, Args...>& tuple)
+/*
+template <typename T, std::size_t i, typename Head>
+constexpr int CountType(const TupleBase<i, Head>&)
+{
+	return (std::is_same_v<T, Head> ? 1 : 0);
+}
+template <typename T, std::size_t i, typename Head, typename ...Args>
+constexpr int CountType(const TupleBase<i, Head, Args...>& tuple)
+{
+	return CountType<T, i + 1, Args...>(tuple) + (std::is_same_v<T, Head> ? 1 : 0);
+}
+*/
+template <typename T, typename ...Args>
+struct CountType;
+
+template <typename T>
+struct CountType<T>
+{
+	static const int val = 0;
+};
+
+template <typename T, typename Head, typename ...Args>
+struct CountType<T, Head, Args...>
+{
+	static const int val = CountType<T, Args...>::val + std::is_same_v<T, Head>;
+};
+
+
+
+template <std::size_t i, typename Head, typename ...Args>
+constexpr Head& Get(TupleBase<i, Head, Args...>& tuple)
 {
     return tuple.value;
 }
-template<std::size_t i, typename Head, typename ...Args>
-const Head& Get(const TupleBase<i, Head, Args...>& tuple)
+template <std::size_t i, typename Head, typename ...Args>
+constexpr const Head& Get(const TupleBase<i, Head, Args...>& tuple)
 {
     return tuple.value;
 }
-template<std::size_t i, typename Head, typename ...Args>
-Head&& Get(TupleBase<i, Head, Args...>&& tuple)
+template <std::size_t i, typename Head, typename ...Args>
+constexpr Head&& Get(TupleBase<i, Head, Args...>&& tuple)
 {
     return std::move(tuple.value);
 }
 
-//template<typename T, size_t j, size_t i, typename Head, typename ...Args>
-//constexpr T& Get(TupleBase<i, Head, Args...>& tuple, decltype(std::declval<TupleBase<i, Head, Args...>>().TupleNode<j, T>::value) q = T())
-//{
-//    return tuple.TupleNode<j, T>::value;
-//}
-//template<typename T, size_t j, size_t i, typename Head, typename ...Args>
-//constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple, decltype(std::declval<TupleBase<i, Head, Args...>>().TupleNode<j, T>::value) q = T())
-//{
-//    return tuple.TupleNode<j, T>::value;
-//}
-//template<typename T, size_t j, size_t i, typename Head, typename ...Args>
-//constexpr T&& Get(TupleBase<i, Head, Args...>&& tuple, decltype(std::declval<TupleBase<i, Head, Args...>>().TupleNode<j, T>::value) q = T())
-//{
-//    return tuple.TupleNode<j, T>::value;
-//}
-//template <typename T>
-//struct get_by_t
-//{
-//    static T val;
-//
-//    template <size_t j, size_t i, typename Head, typename ...Args>
-//    get_by_t(const TupleBase<i, Head, Args...>& tuple) : val(tuple.TupleNode<j, T>::value) {}
-//};
 
-template<typename T, size_t i, typename ...Args>
-constexpr const T& Get(const TupleBase<i, Args...>& tuple);
-template<typename T, size_t i, typename ...Args>
-constexpr const T& Get(const TupleBase<i, T, Args...>& tuple);
+template<typename T, size_t i, typename Head, typename ...Args, 
+	typename std::enable_if_t<!std::is_same_v<T, Head>>* = nullptr>
+constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple);
+template<typename T, size_t i, typename Head, typename ...Args, 
+	typename std::enable_if_t<std::is_same_v<T, Head> && CountType<T, Args...>::val == 0>* = nullptr>
+constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple);
 
-template<typename T, size_t i, typename Head, typename ...Args>
-constexpr const T& _Get(const TupleBase<i, Head, Args...>& tuple)
+template<typename T, size_t i, typename Head, typename ...Args, 
+	typename std::enable_if_t<!std::is_same_v<T, Head>>*>
+constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple)
 {
-    return Get<T, i + 1, Args...>(tuple);
+	return Get<T, i + 1, Args...>(tuple);
 }
-
-template<typename T, size_t i, typename ...Args>
-constexpr const T& Get(const TupleBase<i, Args...>& tuple)
+template<typename T, size_t i, typename Head, typename ...Args, 
+	typename std::enable_if_t<std::is_same_v<T, Head> && CountType<T, Args...>::val == 0>*>
+constexpr const T& Get(const TupleBase<i, Head, Args...>& tuple)
 {
-    return _Get<T, i, Args...>(tuple);
-}
-template<typename T, size_t i, typename ...Args>
-constexpr const T& Get(const TupleBase<i, T, Args...>& tuple)
-{
+    std::cerr << "[" << i << "]";
     return tuple.value;
 }
 
 
-//template<typename T, size_t i, typename Head, typename ...Args>
-//constexpr const T& _Get(const WithArgs<Head, Args...>& tuple)
-//{
-//    std::cout << "c" << i << " " << typeid(Head).name() << "|";
-//    return Get<T, i + 1, Args...>(tuple);
-//}
-//template<typename T, size_t i, typename ...Args>
-//constexpr const T& Get(const WithArgs<Args...>& tuple)
-//{
-//    std::cout << "b" << i << " " << typeid(T).name() << "|";
-//    return _Get<T, i, Args...>(tuple);
-//}
-//template<typename T, size_t i, typename ...Args>
-//constexpr const T& Get(const WithArgs<T, Args...>& tuple)
-//{
-//    std::cout << "a" << i << " " << typeid(T).name() << "|";
-//    return tuple.h;
-//}
+
+
+
+
 
 
 #include <iostream>
@@ -127,17 +118,16 @@ constexpr const T& Get(const TupleBase<i, T, Args...>& tuple)
 struct Accounter
 {
     explicit Accounter(int) { std::cerr << "A"; }
-    Accounter(const Accounter& other) { std::cerr << "Ac"; }
-    Accounter(Accounter&& other) { std::cerr << "Am"; }
-    Accounter& operator=(const Accounter& other) { std::cerr << "A=c"; return *this; }
-    Accounter& operator=(Accounter&& other) { std::cerr << "A=m"; return *this; }
+    Accounter(const Accounter& /*other*/) { std::cerr << "Ac"; }
+    Accounter(Accounter&& /*other*/) { std::cerr << "Am"; }
+    Accounter& operator=(const Accounter& /*other*/) { std::cerr << "A=c"; return *this; }
+    Accounter& operator=(Accounter&& /*other*/) { std::cerr << "A=m"; return *this; }
 };
 
-std::ostream& operator<<(std::ostream& os, const Accounter& acc)
+std::ostream& operator<<(std::ostream& os, const Accounter& /*acc*/)
 {
     return os << "<acc<";
 }
-
 
 
 int main()
@@ -151,19 +141,23 @@ int main()
     Tuple<int, double>(i, k);*/
 
     Accounter a(0);
-    Tuple<Accounter, int, Accounter> t3(a, 0, Accounter(1));
+    Tuple<int, Accounter, double> t3(0, a, 0.0);
     std::cout << "\n";
     const Accounter b(0);
     Tuple<Accounter, int, Accounter, Accounter> t4(Accounter(2), 0, Accounter(3), b);
+    std::cout << "::" << CountType<Accounter, int, Accounter, Accounter>::val;
+    std::cout << "::" << CountType<Accounter, int, Accounter>::val;
+    std::cout << "::" << CountType<Accounter, int>::val;
     std::cout << "\n";
 
     std::cout << Get<0>(t3);
     std::cout << Get<1>(t4);
     std::cout << Get<2>(Tuple<Accounter, int, Accounter, Accounter>(a, 0, Accounter(4), a));
 
-
     std::cout << Get<int>(t3);
     std::cout << Get<Accounter>(t3);
-    //std::cout << Get<int>(t4);
-    //std::cout << Get<int>(Tuple<Accounter, int, Accounter, Accounter>(a, 0, Accounter(4), a));
+    std::cout << Get<int>(t4);
+    std::cout << Get<int>(Tuple<Accounter, Accounter, Accounter, int>(a, Accounter(4), a, 0));
+    //std::cout << Get<Accounter>(Tuple<Accounter, Accounter, Accounter, int>(a, Accounter(4), a, 0));
 }
+
