@@ -2,17 +2,6 @@
 #include <utility>
 
 
-template<std::size_t i, typename T>
-struct TupleNode 
-{
-    T value;
-    TupleNode() = default;
-    TupleNode(const T& val) : value(val) { /*std::cerr << "TNc";*/ }
-    TupleNode(T&& val) : value(std::move(val)) { /*std::cerr << "TNm";*/ }
-    TupleNode(const TupleNode& TN) : value(TN.value) { /*std::cerr << "TN=c";*/ }
-    TupleNode(TupleNode&& TN) : value(std::move(TN.value)) { /*std::cerr << "TN=m";*/ }
-};
-
 
 
 template <size_t i, typename ...Args>
@@ -26,14 +15,17 @@ public:
 };
 
 template <size_t i, typename Head, typename ...Args>
-class TupleBase<i, Head, Args...> : public TupleBase<i + 1, Args...>, public TupleNode<i, Head>
+class TupleBase<i, Head, Args...> : public TupleBase<i + 1, Args...>
 {
 protected:
 
 public:
-    TupleBase() : TupleBase<i + 1, Args...>(), TupleNode<i, Head>() {}
+    Head value;
+
+    TupleBase() : TupleBase<i + 1, Args...>(), value() {}
+
     template <typename Head2, typename ...Args2>
-    TupleBase(Head2&& first, Args2&&... args) : TupleBase<i + 1, Args...>(std::forward<Args2>(args)...), TupleNode<i, Head>(std::forward<Head2>(first)) {}
+    TupleBase(Head2&& head, Args2&&... args) : TupleBase<i + 1, Args...>(std::forward<Args2>(args)...), value(std::forward<Head2>(head)) {}
 
     //template <typename Head2, typename ...Args2>
     //TupleBase(const TupleBase& other) : TupleBase<i + 1, Args...>(other), TupleNode<i, Head>(other.TupleNode<i, Head_other>::value) {}
@@ -50,17 +42,17 @@ using Tuple = TupleBase<0, Args...>;
 template<std::size_t i, typename Head, typename ...Args>
 Head& Get(TupleBase<i, Head, Args...>& tuple)
 {
-    return tuple.TupleNode<i, Head>::value;
+    return tuple.value;
 }
 template<std::size_t i, typename Head, typename ...Args>
 const Head& Get(const TupleBase<i, Head, Args...>& tuple)
 {
-    return tuple.TupleNode<i, Head>::value;
+    return tuple.value;
 }
 template<std::size_t i, typename Head, typename ...Args>
 Head&& Get(TupleBase<i, Head, Args...>&& tuple)
 {
-    return std::move(tuple.TupleNode<i, Head>::value);
+    return std::move(tuple.value);
 }
 
 //template<typename T, size_t j, size_t i, typename Head, typename ...Args>
@@ -88,9 +80,9 @@ Head&& Get(TupleBase<i, Head, Args...>&& tuple)
 //};
 
 template<typename T, size_t i, typename ...Args>
-constexpr const T& Get(const TupleBase<i, T, Args...>& tuple);
-template<typename T, size_t i, typename ...Args>
 constexpr const T& Get(const TupleBase<i, Args...>& tuple);
+template<typename T, size_t i, typename ...Args>
+constexpr const T& Get(const TupleBase<i, T, Args...>& tuple);
 
 template<typename T, size_t i, typename Head, typename ...Args>
 constexpr const T& _Get(const TupleBase<i, Head, Args...>& tuple)
@@ -106,7 +98,7 @@ constexpr const T& Get(const TupleBase<i, Args...>& tuple)
 template<typename T, size_t i, typename ...Args>
 constexpr const T& Get(const TupleBase<i, T, Args...>& tuple)
 {
-    return tuple.TupleNode<i, T>::value;
+    return tuple.value;
 }
 
 
@@ -159,7 +151,7 @@ int main()
     Tuple<int, double>(i, k);*/
 
     Accounter a(0);
-    const Tuple<Accounter, int, Accounter> t3(a, 0, Accounter(1));
+    Tuple<Accounter, int, Accounter> t3(a, 0, Accounter(1));
     std::cout << "\n";
     const Accounter b(0);
     Tuple<Accounter, int, Accounter, Accounter> t4(Accounter(2), 0, Accounter(3), b);
